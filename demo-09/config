@@ -1,0 +1,9 @@
+CHAIN_ID="testing"
+TESTNET_NAME="demo-09"
+WASMD_VERSION="v0.9.1"
+COSMJS_VERSION="v0.21.1"
+
+RPC="https://rpc.demo-09.cosmwasm.com"
+LCD="https://lcd.demo-09.cosmwasm.com"
+FAUCET="https://faucet.demo-09.cosmwasm.com"
+SEED_NODE="26c9c79dc62b5ddc753bb9fcce022fcc98b5a8cf@p2p.demo-09.cosmwasm.com:26656"
