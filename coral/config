@@ -1,0 +1,11 @@
+CHAIN_ID="coral"
+TESTNET_NAME="coralnet"
+// TODO versions
+WASMD_VERSION="v0.9.1"
+COSMJS_VERSION="v0.21.1"
+
+RPC="https://rpc.coralnet.cosmwasm.com"
+LCD="https://lcd.coralnet.cosmwasm.com"
+FAUCET="https://faucet.coralnet.cosmwasm.com"
+// TODO seed node
+SEED_NODE="26c9c79dc62b5ddc753bb9fcce022fcc98b5a8cf@p2p.demo-09.cosmwasm.com:26656"
