@@ -1,8 +1,8 @@
 CHAIN_ID="coral"
 TESTNET_NAME="coralnet"
 // TODO versions
-WASMD_VERSION="v0.9.1"
-COSMJS_VERSION="v0.21.1"
+WASMD_VERSION="v0.10.0"
+COSMJS_VERSION="v0.22.0"
 
 RPC="https://rpc.coralnet.cosmwasm.com"
 LCD="https://lcd.coralnet.cosmwasm.com"

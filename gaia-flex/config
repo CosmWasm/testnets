@@ -1,8 +1,8 @@
 CHAIN_ID="gaia-flex"
 TESTNET_NAME="gaia-flexnet"
 // TODO versions
-WASMD_VERSION="v0.9.1"
-COSMJS_VERSION="v0.21.1"
+WASMD_VERSION="v0.10.0"
+COSMJS_VERSION="v0.22.0"
 
 RPC="https://rpc.gaia-flex.cosmwasm.com"
 LCD="https://lcd.gaia-flex.cosmwasm.com"
