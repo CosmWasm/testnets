@@ -19,7 +19,8 @@ Please `source config` to get all variable you need.
 With those, you can follow the
 [official instructions](https://docs.cosmwasm.com/testnets/testnets.html)
  on how to connect to a testnet.
-Or just connect your command-line client.
+Or just connect your command-line client. In order to build customized wasmd executables `corald` and `coralcli`,
+clone `wasmd` repo and run `make build-coral` on the root of the project.
 
 The [genesis file](./genesis.json) is also available here.
 
