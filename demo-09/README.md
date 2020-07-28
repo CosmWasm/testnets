@@ -2,9 +2,11 @@
 
 A centralized demo net running wasmd 0.9
 
-**Start**: May 2020 (?)
-
-**End**: not yet finished
+- **wasmd version**: `v0.9.0`
+- **wasmd build command**: `make build`
+- **cosmosjs version**: `v0.21.0`
+- **start**: May 2020
+- **end**: not yet finished
 
 ## Purpose
 

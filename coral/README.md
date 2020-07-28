@@ -1,10 +1,12 @@
 # Coral (WIP)
 
-A permissionless network running wasmd 0.9
+A permissionless testing network running
 
-**Start**: 11th August 2020
-
-**End**: not yet finished
+- **wasmd version**: v0.10.0
+- **wasmd build command**: `make build-coral`
+- **cosmosjs version**: v0.22.0
+- **start**: 11th August 2020
+- **end**: not yet finished
 
 ## Purpose
 
