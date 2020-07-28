@@ -2,9 +2,9 @@
 
 A centralized demo net running wasmd 0.9
 
-**Started**: May 2020 (?)
+**Start**: May 2020 (?)
 
-**Ended**: not yet finished
+**End**: not yet finished
 
 ## Purpose
 

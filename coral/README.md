@@ -2,9 +2,9 @@
 
 A permissionless network running wasmd 0.9
 
-**Started**: TBA
+**Start**: 11th August 2020
 
-**Ended**: not yet finished
+**End**: not yet finished
 
 ## Purpose
 

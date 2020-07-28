@@ -2,9 +2,9 @@
 
 A permissionless network running on `wasd` 0.10
 
-**Started**: TBA
+**Start**: 18th August 2020
 
-**Ended**: not yet finished
+**End**: not yet finished
 
 ## Purpose
 
