@@ -2,7 +2,7 @@
 
 A permissionless network running on `wasd` 0.10
 
-- **wasmd version**: `v0.10.0-beta1`
+- **wasmd version**: `v0.10.0`
 - **wasmd build command**: `make build-gaiaflex`
 - **cosmosjs version**: `v0.22.0`
 - **start**: 18th August 2020
