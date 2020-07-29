@@ -1,16 +1,16 @@
-# Demo 09
+# Gaia Flex (WIP)
 
-A centralized demo net running wasmd 0.9
+A permissionless network running on `wasd` 0.10
 
-- **wasmd version**: `v0.9.0`
-- **wasmd build command**: `make build`
-- **cosmosjs version**: `v0.21.0`
-- **start**: May 2020
+- **wasmd version**: `v0.10.0`
+- **wasmd build command**: `make build-gaiaflex`
+- **cosmosjs version**: `v0.22.0`
+- **start**: 18th August 2020
 - **end**: not yet finished
 
 ## Purpose
 
-This network is a simple one node network
+This is network demonstrates a gaia updated to launchpad with the x/wasm modules added along with governance controls on the contract lifecycle (uploading, instantiating, migrating).
 
 ## Connecting
 

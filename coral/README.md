@@ -1,16 +1,17 @@
-# Demo 09
+# Coral (WIP)
 
-A centralized demo net running wasmd 0.9
+A permissionless testing network running
 
-- **wasmd version**: `v0.9.0`
-- **wasmd build command**: `make build`
-- **cosmosjs version**: `v0.21.0`
-- **start**: May 2020
+- **wasmd version**: v0.10.0
+- **wasmd build command**: `make build-coral`
+- **cosmosjs version**: v0.22.0
+- **start**: 11th August 2020
 - **end**: not yet finished
 
 ## Purpose
 
-This network is a simple one node network
+This is long-term playground network where developers can test their contracts validators test their infrastructure. 
+You can relate it to Ethereum's Rinkeby.
 
 ## Connecting
 
@@ -20,7 +21,8 @@ Please `source config` to get all variable you need.
 With those, you can follow the
 [official instructions](https://docs.cosmwasm.com/testnets/testnets.html)
  on how to connect to a testnet.
-Or just connect your command-line client.
+Or just connect your command-line client. In order to build customized wasmd executables `corald` and `coralcli`,
+clone `wasmd` repo and run `make build-coral` on the root of the project.
 
 The [genesis file](./genesis.json) is also available here.
 
