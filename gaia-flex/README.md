@@ -14,7 +14,7 @@ This is network demonstrates a gaia updated to launchpad with the x/wasm modules
 
 ## Connecting
 
-The configuration can be [downloaded here](./config).
+The configuration can be [downloaded here](./config.env).
 Please `source config` to get all variable you need.
 
 With those, you can follow the

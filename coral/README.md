@@ -10,18 +10,18 @@ A permissionless testing network running
 
 ## Purpose
 
-This is long-term playground network where developers can test their contracts validators test their infrastructure. 
+This is long-term playground network where developers can test their contracts validators test their infrastructure.
 You can relate it to Ethereum's Rinkeby.
 
 ## Connecting
 
-The configuration can be [downloaded here](./config).
+The configuration can be [downloaded here](./config.env).
 Please `source config` to get all variable you need.
 
 With those, you can follow the
 [official instructions](https://docs.cosmwasm.com/testnets/testnets.html)
  on how to connect to a testnet.
-Or just connect your command-line client. In order to build customized wasmd executables `corald` and `coralcli`,
+Or just connect your command-line client. In order to build customized wasmd executables `corald` and `coral`,
 clone `wasmd` repo and run `make build-coral` on the root of the project.
 
 The [genesis file](./genesis.json) is also available here.
