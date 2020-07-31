@@ -14,7 +14,7 @@ This network is a simple one node network
 
 ## Connecting
 
-The configuration can be [downloaded here](./config).
+The configuration can be [downloaded here](./config.env).
 Please `source config` to get all variable you need.
 
 With those, you can follow the
