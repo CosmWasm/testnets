@@ -13,6 +13,17 @@ A permissionless testing network running
 This is long-term playground network where developers can test their contracts validators test their infrastructure.
 You can relate it to Ethereum's Rinkeby.
 
+## Get Genesis Tokens
+
+Fork this repo and check it out, build the `coral` binary from 
+[`wasmd`](https://github.com/CosmWasm/wasm), and make a PR updating the
+genesis file:
+
+```shell
+coral keys add validator
+corald add-genesis-account --home $(pwd) $(coral keys show -a validator) 100000000ushell,100000000ureef
+```
+
 ## Connecting
 
 The configuration can be [downloaded here](./config.env).
