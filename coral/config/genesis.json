@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2020-07-01T13:24:53.194871767Z",
-  "chain_id": "coral",
+  "genesis_time": "2020-08-04T09:26:23.247503806Z",
+  "chain_id": "cosmwasm-coral",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -19,48 +19,43 @@
   },
   "app_hash": "",
   "app_state": {
-    "mint": {
-      "minter": {
-        "inflation": "0.130000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "ustake",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
-      }
-    },
-    "wasm": {
-      "codes": null,
-      "contracts": null,
-      "sequences": null
-    },
-    "params": null,
     "evidence": {
       "params": {
         "max_evidence_age": "120000000000"
       },
       "evidence": []
     },
-    "staking": {
+    "auth": {
       "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "historical_entries": 0,
-        "bond_denom": "ustake"
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
       },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "coral1e86v774dch5uwkks0cepw8mdz8a9flhhapvf6w",
+            "coins": [
+              {
+                "denom": "ureef",
+                "amount": "100000000"
+              },
+              {
+                "denom": "ushell",
+                "amount": "100000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        }
+      ]
     },
+    "upgrade": {},
     "gov": {
       "starting_proposal_id": "1",
       "deposits": null,
@@ -69,7 +64,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "ustake",
+            "denom": "ureef",
             "amount": "10000000"
           }
         ],
@@ -84,44 +79,34 @@
         "veto": "0.334000000000000000"
       }
     },
-    "slashing": {
-      "params": {
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600000000000",
-        "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
-      },
-      "signing_infos": {},
-      "missed_blocks": {}
+    "genutil": {
+      "gentxs": []
     },
-    "upgrade": {},
+    "supply": {
+      "supply": []
+    },
     "crisis": {
       "constant_fee": {
-        "denom": "ustake",
+        "denom": "ureef",
         "amount": "1000"
       }
     },
     "bank": {
       "send_enabled": true
     },
-    "genutil": {
-      "gentxs": [
-      ]
-    },
-    "supply": {
-      "supply": []
-    },
-    "auth": {
-      "params": {
-        "max_memo_characters": "256",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
       },
-      "accounts": [
-      ]
+      "params": {
+        "mint_denom": "ureef",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
     },
     "distribution": {
       "params": {
@@ -141,6 +126,42 @@
       "validator_current_rewards": [],
       "delegator_starting_infos": [],
       "validator_slash_events": []
+    },
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody"
+        },
+        "instantiate_default_permission": "Everybody"
+      }
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "params": null,
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 0,
+        "bond_denom": "ureef"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
     }
   }
 }
