@@ -33,7 +33,27 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "coral1e86v774dch5uwkks0cepw8mdz8a9flhhapvf6w",
+            "coins": [
+              {
+                "denom": "ureef",
+                "amount": "100000000"
+              },
+              {
+                "denom": "ushell",
+                "amount": "100000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        }
+      ]
     },
     "upgrade": {},
     "gov": {
