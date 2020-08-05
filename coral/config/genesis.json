@@ -52,6 +52,25 @@
             "account_number": "0",
             "sequence": "0"
           }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+          "address": "cosmos1xgf0cm289z0z2w5phhy6ay3xscq5fpmt8xefhn",
+          "coins": [
+            {
+              "denom": "ureef",
+              "amount": "100000000"
+            },
+            {
+              "denom": "ushell",
+              "amount": "100000000"
+            }
+          ],
+          "public_key": null,
+          "account_number": "0",
+          "sequence": "0"
+          }
         }
       ]
     },
