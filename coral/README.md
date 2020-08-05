@@ -21,11 +21,7 @@ genesis file:
 
 ```shell
 coral keys add validator
-corald init dummy
-corald add-genesis-account $(coral keys show -a validator) 100000000ushell,100000000ureef
-cat $HOME/.corald/config/genesis.json | jq '.app_state.auth.accounts [0]' > /tmp/new_acc.json
-NEW_GEN=$(jq '.app_state.auth.accounts += [input]' ./config/genesis.json /tmp/new_acc.json) && echo "$NEW_GEN" > ./config/genesis.json
-
+corald add-genesis-account --home . $(coral keys show -a validator) 100000000ushell,100000000ureef
 ```
 
 ## Connecting
