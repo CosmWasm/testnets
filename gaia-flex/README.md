@@ -2,6 +2,7 @@
 
 A permissionless network running on `wasd` 0.10
 
+- **go version**: `1.14+`
 - **wasmd version**: `v0.10.0`
 - **wasmd build command**: `make build-gaiaflex`
 - **cosmosjs version**: `v0.22.0`

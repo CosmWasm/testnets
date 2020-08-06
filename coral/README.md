@@ -2,9 +2,10 @@
 
 A permissionless testing network running
 
-- **wasmd version**: v0.10.0
+- **go version**: `1.14+`
+- **wasmd version**: `v0.10.0`
 - **wasmd build command**: `make build-coral`
-- **cosmosjs version**: v0.22.0
+- **cosmosjs version**: `v0.22.0`
 - **start**: 11th August 2020
 - **end**: not yet finished
 
@@ -15,7 +16,7 @@ You can relate it to Ethereum's Rinkeby.
 
 ## Get Genesis Tokens
 
-Fork this repo and check it out, build the `coral` binary from 
+Fork this repo and check it out, build the `coral` binary from
 [`wasmd`](https://github.com/CosmWasm/wasm), and make a PR updating the
 genesis file:
 
