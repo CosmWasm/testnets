@@ -2511,7 +2511,7 @@
     },
     "gov": {
       "deposit_params": {
-        "max_deposit_period": "172800000000000",
+        "max_deposit_period": "259200000000000",
         "min_deposit": [
           {
             "amount": "10000000",
@@ -2523,13 +2523,13 @@
       "proposals": null,
       "starting_proposal_id": "1",
       "tally_params": {
-        "quorum": "0.334000000000000000",
+        "quorum": "0.200000000000000000",
         "threshold": "0.500000000000000000",
         "veto": "0.334000000000000000"
       },
       "votes": null,
       "voting_params": {
-        "voting_period": "172800000000000"
+        "voting_period": "259200000000000"
       }
     },
     "mint": {
@@ -2579,9 +2579,12 @@
     },
     "upgrade": {},
     "wasm": {
-      "codes": null,
-      "contracts": null,
-      "sequences": null
+      "params": {
+        "code_upload_access": {
+          "permission": "Nobody"
+        },
+        "instantiate_default_permission": "Nobody"
+      }
     }
   },
   "chain_id": "gaia-flex",
@@ -2601,5 +2604,5 @@
       ]
     }
   },
-  "genesis_time": "2020-07-01T13:24:53.194871767Z"
+  "genesis_time": "2020-08-17T12:00:00.000000000Z"
 }
