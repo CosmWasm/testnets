@@ -2511,7 +2511,7 @@
     },
     "gov": {
       "deposit_params": {
-        "max_deposit_period": "172800000000000",
+        "max_deposit_period": "259200000000000",
         "min_deposit": [
           {
             "amount": "10000000",
@@ -2523,13 +2523,13 @@
       "proposals": null,
       "starting_proposal_id": "1",
       "tally_params": {
-        "quorum": "0.334000000000000000",
+        "quorum": "0.200000000000000000",
         "threshold": "0.500000000000000000",
         "veto": "0.334000000000000000"
       },
       "votes": null,
       "voting_params": {
-        "voting_period": "172800000000000"
+        "voting_period": "259200000000000"
       }
     },
     "mint": {
