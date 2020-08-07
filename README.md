@@ -1,6 +1,6 @@
 # CosmWasm Testnets
 
-Information on all public CosmWasm testnets
+Information on all public CosmWasm testnets. Check [documentations](https://docs.cosmwasm.com/testnets/build-requirements.html) for detailed setup demonstration.
 
 ## Current
 
