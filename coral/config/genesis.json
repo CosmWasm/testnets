@@ -40,6 +40,25 @@
             "public_key": null,
             "sequence": "0"
           }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": "0",
+            "address": "coral1dyual04q9m3f0a7qsvfx4hvu8ceyrxw9yldp8w",
+            "coins": [
+              {
+                "amount": "5000000000",
+                "denom": "ureef"
+              },
+              {
+                "amount": "5000000000",
+                "denom": "ushell"
+              }
+            ],
+            "public_key": null,
+            "sequence": "0"
+          }
         }
       ],
       "params": {
