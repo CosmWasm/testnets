@@ -2579,9 +2579,12 @@
     },
     "upgrade": {},
     "wasm": {
-      "codes": null,
-      "contracts": null,
-      "sequences": null
+      "params": {
+        "code_upload_access": {
+          "permission": "Nobody"
+        },
+        "instantiate_default_permission": "Nobody"
+      }
     }
   },
   "chain_id": "gaia-flex",
