@@ -26,4 +26,7 @@ possibly declare a few more variables as desired.
 is synced up, you can stake to make it a validator.
 
 [Public Endpoints](./endpoints) - will help you set up ssl certs and nginx config to serve rpc and lcd
-endpoints over https. Also, you can optionally set up a faucet (if you can feed it tokens)
+endpoints over https.
+
+[Faucet](./faucet) - Also, you can optionally set up a faucet. However, you need to feed it with tokens
+so it has something to give out.
