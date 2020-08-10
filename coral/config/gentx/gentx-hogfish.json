@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Hogfish",
+            "identity": "",
+            "website": "",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "coral10zn0d2eeust0495crtr3zqz7t688hg0s53afrh",
+          "validator_address": "coralvaloper10zn0d2eeust0495crtr3zqz7t688hg0sm7wr4f",
+          "pubkey": "coralvalconspub1zcjduepqvxg72ccnl9r65fv0wn3amlk4sfzqfe2k36l073kjx2qyaf6sk23qw7j8wq",
+          "value": {
+            "denom": "ureef",
+            "amount": "1000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "ApgM7ifRF0rcTo/dha2JXBHNhXmkiKYRGESj/yexI5sw"
+        },
+        "signature": "KQcWmui6XeE6RhwlAiN5o3R02InsTh17fV/Sdx2nxnMvmYZFLJhxG9eRuOJYH3prwcI0+ocP1czHBWV4Z/yKig=="
+      }
+    ],
+    "memo": "hogfish@192.168.178.75:26656"
+  }
+}
