@@ -21,6 +21,9 @@ Fork this repo and check it out, build the `coral` binary from
 genesis file:
 
 ```shell
+# go to app data directory
+cd testnets/coral
+
 coral keys add validator
 corald add-genesis-account --home . $(coral keys show -a validator) 100000000ushell,100000000ureef
 # please sort the genesis file, so the diff makes sense
