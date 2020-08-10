@@ -50,3 +50,41 @@ This will install a service file with the binary name under eg `/etc/systemd/sys
 enable it to start on reboot, and then start it running.
 
 You may also run this manually or use another supervisor and skip this step.
+
+## Staking
+
+Once your node has caught up, if you want to become a validator, just delegate some funds to it.
+
+First, make sure you can connect to it and control an account with some funds.
+Example for coralnet, values taken from `defaults.env`, `validator` being your local name for a key with funds behind it:
+
+```bash
+coral config chain-id cosmwasm-coral
+coral config node https://rpc.coralnet.cosmwasm.com:443
+
+coral query account $(coral keys show -a validator)
+```
+
+And get your pubkey from the validator machine:
+
+```
+root@validator$ ./show_validator.sh
+# copy this as VAL_PUBKEY in your local shell
+```
+
+Then see [testnet instructions](https://docs.cosmwasm.com/testnets/testnets.html) or just run a command like:
+
+```bash
+coral tx staking create-validator \
+  --amount=100000000ureef \
+  --pubkey=${VAL_PUBKEY} \
+  --moniker=$MONIKER \
+  --chain-id=cosmwasm-coral \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1" \
+  --gas="400000" \
+  --fees="20000ushell" \
+  --from=validator
+```
