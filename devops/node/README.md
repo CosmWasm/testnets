@@ -4,7 +4,7 @@ These instructions work for a machine running Ubuntu 20.04.
 
 First, copy all files from this directory to the machine:
 
-`scp ./* root@1.2.3.4:`
+`scp -r ./* root@1.2.3.4:`
 
 Also, copy the proper env for the testnet you choose:
 

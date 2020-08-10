@@ -8,7 +8,7 @@ expose an RPC endpoint.
 
 First, copy all files from this directory to the machine:
 
-`scp ./* root@1.2.3.4:`
+`scp -r ./* root@1.2.3.4:`
 
 Also, copy the proper env for the testnet you choose:
 
@@ -31,13 +31,29 @@ Then run it like: `RPC_URL=http://localhost:26657 ./rest_server.sh`
 When this is up, `systemctl status coral-rest` or whatever testnet it is for, should show success.
 And `curl http://localhost:1317/node_info` should return good results.
 
-
 # Nginx
 
-First, source all the defaults: `source defaults.sh`
+You should already have the rest server running locally, and the `defaults.env` variables in your shell.
 
-Then you may want to set the following variables locally:
+Then you will want to set the following variables locally:
 
-* `MONIKER` - this is the moniker you use for the node. it should be unique and descriptive (required)
-* `WASMD_HOME` - this is the directory where all the data is stored. Default `/root`
-* `REPOSITORY` - the docker image repository to use. Default `cosmwasm/wasmd` (maybe you have a fork?)
+* `EMAIL` - an email for a sysadmin, used with let's encrypt when registering ssl certificates
+* `DOMAIN` - the root domain we register under. We will try to set up ssl services for
+  `rpc.$DOMAIN` and `lcd.$DOMAIN`. Both these DNS records must point to the current machine
+* `RPC_URL` - this is the RPC URL we connect to for serving the data. (same one the rest server uses)
+
+Run it like:
+
+```bash
+export EMAIL=hello@my.com
+export DOMAIN=coral.my.com
+export RPC_URL=http://localhost:26657/
+./nginx.sh
+```
+
+After this is done, you should be able to query the https endpoints:
+
+```bash
+curl https://rpc.DOMAIN/status
+curl https://lcd.DOMAIN/node_info
+```
