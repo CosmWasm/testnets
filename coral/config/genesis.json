@@ -229,7 +229,7 @@
                   "pubkey": "coralvalconspub1zcjduepqvxg72ccnl9r65fv0wn3amlk4sfzqfe2k36l073kjx2qyaf6sk23qw7j8wq",
                   "validator_address": "coralvaloper10zn0d2eeust0495crtr3zqz7t688hg0sm7wr4f",
                   "value": {
-                    "amount": "1000000",
+                    "amount": "100000000",
                     "denom": "ureef"
                   }
                 }
@@ -241,7 +241,7 @@
                   "type": "tendermint/PubKeySecp256k1",
                   "value": "ApgM7ifRF0rcTo/dha2JXBHNhXmkiKYRGESj/yexI5sw"
                 },
-                "signature": "KQcWmui6XeE6RhwlAiN5o3R02InsTh17fV/Sdx2nxnMvmYZFLJhxG9eRuOJYH3prwcI0+ocP1czHBWV4Z/yKig=="
+                "signature": "ODh7QXYMkf0ZzhWXJtKYfjXVAtoH4JCAi79ozYMKokgpt8N7XBOgq8m5rgwGKXTydW5iQYxq15KKwX0jI8tw6A=="
               }
             ]
           }
