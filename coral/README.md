@@ -17,7 +17,7 @@ You can relate it to Ethereum's Rinkeby.
 ## Get Genesis Tokens
 
 Fork this repo and check it out, build the `coral` binary from
-[`wasmd`](https://github.com/CosmWasm/wasm), and make a PR updating the
+[`wasmd`](https://github.com/CosmWasm/wasmd), and make a PR updating the
 genesis file:
 
 ```shell
@@ -32,8 +32,8 @@ SORTED=$(jq -S . < ./config/genesis.json) && echo "$SORTED" > ./config/genesis.j
 
 ## Connecting
 
-The configuration can be [downloaded here](./config.env).
-Please `source config` to get all variable you need.
+The configuration can be [downloaded here](./defaults.env).
+Please `source defaults.env` to get all variable you need.
 
 With those, you can follow the
 [official instructions](https://docs.cosmwasm.com/testnets/testnets.html)
@@ -49,4 +49,4 @@ Here we list all explorers, wallets, and apps you can access with a browser:
 
 * [Wasm Glass](https://demonet.wasm.glass) - contract explorer
 * [Name App](https://cosmwasm.github.io/name-app/) - Sample dApp interface to use the 
-  [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.5.2/nameservice) 
+  [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.6.0/nameservice) 
