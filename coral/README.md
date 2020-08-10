@@ -1,4 +1,4 @@
-# Coral (WIP)
+# Coralnet (WIP)
 
 A permissionless testing network running
 
@@ -41,12 +41,12 @@ With those, you can follow the
 Or just connect your command-line client. In order to build customized wasmd executables `corald` and `coral`,
 clone `wasmd` repo and run `make build-coral` on the root of the project.
 
-The [genesis file](./genesis.json) is also available here.
+The [genesis file](./config/genesis.json) is also available here.
 
 ## Web endpoints
 
 Here we list all explorers, wallets, and apps you can access with a browser:
 
 * [Wasm Glass](https://demonet.wasm.glass) - contract explorer
-* [Name App](https://cosmwasm.github.io/name-app/) - Sample dApp interface to use the 
-  [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.6.0/nameservice) 
+* [Name App](https://cosmwasm.github.io/name-app/) - Sample dApp interface to use the
+  [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.6.0/nameservice)
