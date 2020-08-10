@@ -14,6 +14,12 @@ Some changes you may wish to make if you deploy this on a value-bearing network:
 
 However, for early testnets this should be enough to get started.
 
+## Setup
+
+All scripts rely heavily on environment variables to work correctly.
+You will want to `source ../<testnetname>/defaults.env` as a basis, then
+possibly declare a few more variables as desired.
+
 ## Scripts
 
 [Full Node](./node) - will help you start up a full node connected to a running network. Once this
