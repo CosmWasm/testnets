@@ -1,0 +1,18 @@
+[Unit]
+Description=SERVICE
+Requires=network-online.target
+After=network-online.target
+Requires=docker.service
+After=docker.service
+
+[Service]
+TimeoutStartSec=5
+Restart=always
+User=root
+Group=root
+ExecStart=/usr/bin/docker run --rm --name SERVICE --mount type=bind,source=WASMD_HOME,target=/root --network=host -p 1317:1317 DOCKER BINARY rest-server --laddr tcp://127.0.0.1:1317 --trust-node --node RPC_URL
+ExecStop=/usr/bin/docker stop -t 2 SERVICE
+
+[Install]
+WantedBy=multi-user.target
+
