@@ -2,14 +2,14 @@
 
 Information on all public CosmWasm testnets. Check [documentations](https://docs.cosmwasm.com/testnets/build-requirements.html) for detailed setup demonstration.
 
-## Current
+## Running
 
-* [Demo-10](./demo-10/README.md)
+* [Demo-10](./demo-10)
 
 ## Upcoming
 
-* Coral (TODO)
-* Gaia Fetch (TODO)
+* [Coralnet](./coral)
+* [Gaia Flex](./gaia-flex) (TODO)
 
 ## Past
 
