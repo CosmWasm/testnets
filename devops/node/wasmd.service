@@ -1,0 +1,18 @@
+[Unit]
+Description=BINARY
+Requires=network-online.target
+After=network-online.target
+Requires=docker.service
+After=docker.service
+
+[Service]
+TimeoutStartSec=5
+Restart=always
+User=root
+Group=root
+ExecStart=/usr/bin/docker run --rm --name BINARY --mount type=bind,source=WASMD_HOME,target=/root -p 26657:26657 -p 26656:26656 DOCKER BINARY start --rpc.laddr tcp://0.0.0.0:26657 --trace
+ExecStop=/usr/bin/docker stop -t 2 BINARY
+
+[Install]
+WantedBy=multi-user.target
+
