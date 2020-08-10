@@ -4,7 +4,7 @@ Information on all public CosmWasm testnets. Check [documentations](https://docs
 
 ## Current
 
-* [Demo-09](./demo-09/README.md)
+* [Demo-10](./demo-10/README.md)
 
 ## Upcoming
 
