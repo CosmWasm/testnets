@@ -97,6 +97,25 @@
             "public_key": null,
             "sequence": "0"
           }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": "0",
+            "address": "coral13mcejut8e5tncs59zcs4yn4envcd98vx682frk",
+            "coins": [
+              {
+                "amount": "100000000",
+                "denom": "ureef"
+              },
+              {
+                "amount": "100000000",
+                "denom": "ushell"
+              }
+            ],
+            "public_key": null,
+            "sequence": "0"
+          }
         }
       ],
       "params": {
@@ -239,5 +258,5 @@
       ]
     }
   },
-  "genesis_time": "2020-08-10T12:00:00.000000000Z"
+  "genesis_time": "2020-08-10T12:00:00Z"
 }
