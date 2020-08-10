@@ -17,7 +17,7 @@ You can relate it to Ethereum's Rinkeby.
 ## Get Genesis Tokens
 
 Fork this repo and check it out, build the `coral` binary from
-[`wasmd`](https://github.com/CosmWasm/wasm), and make a PR updating the
+[`wasmd`](https://github.com/CosmWasm/wasmd), and make a PR updating the
 genesis file:
 
 ```shell
@@ -29,8 +29,8 @@ SORTED=$(jq -S . < ./config/genesis.json) && echo "$SORTED" > ./config/genesis.j
 
 ## Connecting
 
-The configuration can be [downloaded here](./config.env).
-Please `source config` to get all variable you need.
+The configuration can be [downloaded here](./defaults.env).
+Please `source defaults.env` to get all variable you need.
 
 With those, you can follow the
 [official instructions](https://docs.cosmwasm.com/testnets/testnets.html)
