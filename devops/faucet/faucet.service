@@ -1,0 +1,20 @@
+[Unit]
+Description=faucet
+Requires=network-online.target
+After=network-online.target
+Requires=docker.service
+After=docker.service
+
+[Service]
+TimeoutStartSec=300
+Environment=FAUCET_CREDIT_AMOUNT_SHELL=1
+Environment="FAUCET_MNEMONIC=TOP_SECRET_MNEMONIC"
+Restart=always
+User=root
+Group=root
+ExecStart=/usr/bin/docker run --rm --name faucet -e FAUCET_CREDIT_AMOUNT_COSM -e FAUCET_MNEMONIC --network=host -p 8000:8000 cosmwasm/faucet:manual
+ExecStop=/usr/bin/docker stop -t 2 faucet
+
+[Install]
+WantedBy=multi-user.target
+
