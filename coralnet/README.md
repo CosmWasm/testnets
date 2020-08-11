@@ -1,4 +1,4 @@
-# Coralnet (WIP)
+# Coralnet
 
 A permissionless testing network running
 
@@ -22,7 +22,7 @@ genesis file:
 
 ```shell
 # go to app data directory
-cd testnets/coral
+cd testnets/coralnet
 
 coral keys add validator
 corald add-genesis-account --home . $(coral keys show -a validator) 100000000ushell,100000000ureef
