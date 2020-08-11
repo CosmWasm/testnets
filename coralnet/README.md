@@ -47,6 +47,9 @@ The [genesis file](./config/genesis.json) is also available here.
 
 Here we list all explorers, wallets, and apps you can access with a browser:
 
-* **(WIP)** [Wasm Glass](https://demonet.wasm.glass) - contract explorer
+* [RPC](https://rpc.coralnet.cosmwasm.com) - public RPC endpoint
+* [LCD](https://lcd.coralnet.cosmwasm.com) - public LCD endpoint
+* [FAUCET](https://faucet.coralnet.cosmwasm.com) - faucet
+* [Wasm Glass](https://coral.wasm.glass) - contract explorer
 * [Name App](https://cosmwasm.github.io/name-app/) - Sample dApp interface to use the
 * [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.6.0/nameservice)
