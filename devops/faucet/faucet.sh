@@ -12,4 +12,4 @@ docker build -t cosmwasm/faucet:manual .
 
 docker run --rm cosmwasm/faucet:manual cosmwasm-faucet version
 
-docker run --rm cosmwasm/faucet:manual cosmwasm-faucet generate coral
+docker run -e FAUCET_ADDRESS_PREFIX=coral --rm cosmwasm/faucet:manual cosmwasm-faucet generate
