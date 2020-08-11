@@ -3,7 +3,7 @@
 # Choose from https://hub.docker.com/_/node/
 FROM node:12.14.1-alpine
 
-RUN yarn global add @cosmjs/faucet@0.22.1
+RUN yarn global add @cosmjs/faucet@0.22.2
 
 # Check it exists
 RUN /usr/local/bin/cosmwasm-faucet version

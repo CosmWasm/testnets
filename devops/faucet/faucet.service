@@ -11,10 +11,11 @@ Environment=FAUCET_CREDIT_AMOUNT_SHELL=1
 Environment="FAUCET_MNEMONIC=TOP_SECRET_MNEMONIC"
 Environment=FAUCET_ADDRESS_PREFIX=coral
 Environment="FAUCET_TOKENS=SHELL=10^6ushell,REEF=10^6ureef"
+Environment=FAUCET_FEE=2000ushell
 Restart=always
 User=root
 Group=root
-ExecStart=/usr/bin/docker run --rm --name faucet -e FAUCET_CREDIT_AMOUNT_COSM -e FAUCET_MNEMONIC -e FAUCET_ADDRESS_PREFIX -e FAUCET_TOKENS --network=host -p 8000:8000 cosmwasm/faucet:manual
+ExecStart=/usr/bin/docker run --rm --name faucet -e FAUCET_FEE -e FAUCET_CREDIT_AMOUNT_SHELL -e FAUCET_MNEMONIC -e FAUCET_ADDRESS_PREFIX -e FAUCET_TOKENS -e FAUCET_FEE --network=host -p 8000:8000 cosmwasm/faucet:manual
 ExecStop=/usr/bin/docker stop -t 2 faucet
 
 [Install]
