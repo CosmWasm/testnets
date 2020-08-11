@@ -5,7 +5,7 @@ A permissionless testing network running
 - **go version**: `1.14+`
 - **wasmd version**: `v0.10.0`
 - **wasmd build command**: `make build-coral`
-- **cosmosjs version**: `v0.22.0`
+- **CosmJS version**: `v0.22.1`
 - **start**: 11th August 2020
 - **end**: not yet finished
 
