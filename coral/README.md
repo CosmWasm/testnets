@@ -47,6 +47,6 @@ The [genesis file](./config/genesis.json) is also available here.
 
 Here we list all explorers, wallets, and apps you can access with a browser:
 
-* [Wasm Glass](https://demonet.wasm.glass) - contract explorer
+* **(WIP)** [Wasm Glass](https://demonet.wasm.glass) - contract explorer
 * [Name App](https://cosmwasm.github.io/name-app/) - Sample dApp interface to use the
-  [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.6.0/nameservice)
+* [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.6.0/nameservice)
