@@ -5,7 +5,7 @@ A centralized demo net running wasmd 0.10
 - **go version**: `1.14+`
 - **wasmd version**: `v0.10.0`
 - **wasmd build command**: `make build`
-- **cosmosjs version**: `v0.22.0`
+- **CosmJS version**: `v0.22.1`
 - **start**: July 2020
 - **end**: not yet finished
 
