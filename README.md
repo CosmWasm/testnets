@@ -5,10 +5,10 @@ Information on all public CosmWasm testnets. Check [documentations](https://docs
 ## Running
 
 * [Demo-10](./demo-10)
+* [Coralnet](./coral)
 
 ## Upcoming
 
-* [Coralnet](./coral)
 * [Gaia Flex](./gaia-flex) (TODO)
 
 ## Past
