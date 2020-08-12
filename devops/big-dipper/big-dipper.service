@@ -1,0 +1,20 @@
+[Unit]
+Description=big-dipper
+Requires=docker.service network-online.target 
+After=docker.service network-online.target
+
+[Service]
+TimeoutStartSec=5
+Restart=always
+User=root
+Group=root
+WorkingDirectory=/etc/big-dipper/
+ExecStartPre=/usr/bin/docker-compose pull --quiet --ignore-pull-failures
+ExecStartPre=/usr/bin/docker-compose build --pull
+ExecStart=/usr/bin/docker-compose up --remove-orphans
+ExecStop=/usr/bin/docker-compose down --remove-orphans
+ExecReload=/usr/bin/docker-compose pull --quiet --ignore-pull-failures
+ExecReload=/usr/bin/docker-compose build --pull
+
+[Install]
+WantedBy=multi-user.target

@@ -50,5 +50,6 @@ Here we list all explorers, wallets, and apps you can access with a browser:
 * [RPC](https://rpc.coralnet.cosmwasm.com) - public RPC endpoint
 * [LCD](https://lcd.coralnet.cosmwasm.com) - public LCD endpoint
 * [FAUCET](https://faucet.coralnet.cosmwasm.com) - faucet
+* [Big Dipper/Block Explorer](https://bigdipper.coralnet.cosmwasm.com)
 * [Wasm Glass](https://coralnet.wasm.glass) - contract explorer
 * [Name App](https://cosmwasm.github.io/name-app/) - Sample dApp interface to use the

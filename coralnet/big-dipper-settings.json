@@ -1,0 +1,54 @@
+{
+    "public":{
+        "chainName": "CosmWasm Coralnet",
+        "chainId": "cosmwasm-coral",
+        "gtm": "{Add your Google Tag Manager ID here}",
+        "slashingWindow": 10000,
+        "uptimeWindow": 250,
+        "initialPageSize": 30,
+        "bech32PrefixAccAddr": "coral",
+        "bech32PrefixAccPub": "coralpub",
+        "bech32PrefixValAddr": "coralvaloper",
+        "bech32PrefixValPub": "coralvaloperpub",
+        "bech32PrefixConsAddr": "coralvalcons",
+        "bech32PrefixConsPub": "coralvalconspub",
+        "bondDenom": "ureef",
+        "powerReduction": 1000000,
+        "coins": [
+            {
+                "denom": "ushell",
+                "displayName": "SHELL",
+                "displayNamePlural": "SHELLS",
+                "fraction": 1000000
+            }, 
+            {
+                "denom": "ureef",
+                "displayName": "REEF",
+                "displayNamePlural": "REEFS",
+                "fraction": 1000000
+            } 
+        ],
+        "gasPrice": 0.025,
+        "coingeckoId": "none"
+    },
+    "genesisFile": "https://raw.githubusercontent.com/CosmWasm/testnets/master/coralnet/config/genesis.json",
+    "remote":{
+        "rpc":"https://rpc.coralnet.cosmwasm.com",
+        "lcd":"https://lcd.coralnet.cosmwasm.com"
+    },
+    "debug": {
+        "startTimer": true,
+        "readGenesis": true
+    },
+    "params":{
+        "startHeight": 0,
+        "defaultBlockTime": 5000,
+        "blockInterval": 15000,
+        "consensusInterval": 1000,
+        "statusInterval":7500,
+        "signingInfoInterval": 1800000,
+        "proposalInterval": 5000,
+        "missedBlocksInterval": 60000,
+        "delegationInterval": 900000
+    }
+}
