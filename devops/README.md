@@ -30,3 +30,5 @@ endpoints over https.
 
 [Faucet](./faucet) - Also, you can optionally set up a faucet. However, you need to feed it with tokens
 so it has something to give out.
+
+[Block Explorer](./big-dipper) - You can optionally set up a block-explorer. [forbole/big-dipper](https://github.com/CosmWasm/big-dipper)
