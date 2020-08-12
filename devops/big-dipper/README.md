@@ -4,11 +4,11 @@ These instructions work for a machine running Ubuntu 20.04.
 
 First, copy all files from this directory to the machine:
 
-`scp -r ./* root@1.2.3.4:/root`
+`scp -r ./* root@1.2.3.4:/etc/big-dipper`
 
 Also, copy the proper settings for the testnet you choose:
 
-`scp ../../coralnet/big-dipper-settings.json root@1.2.3.4:/root/settings.json`
+`scp ../../coralnet/big-dipper-settings.json root@1.2.3.4:/etc/big-dipper/settings.json`
 
 ## Installing
 
@@ -32,3 +32,10 @@ This will install a service file with the binary name under eg `/etc/systemd/sys
 enable it to start on reboot, and then start it running.
 
 You may also run this manually or use another supervisor and skip this step.
+
+## Docker Compose environment variables
+
+Big dipper requires configuration json as environment variable passed to docker compose run command.
+`./install.sh` script creates an `.env` file in `/etc/big-dipper` that keeps the [docker-compose environment
+variables](https://docs.docker.com/compose/environment-variables/#the-env-file). `big-dipper.service` runs on working
+directory `/etc/big-dipper` and `docker-compose up` sources `.env`. Long story short: don't delete `.env` ;)
