@@ -35,14 +35,6 @@ const buildFeeTable = (feeToken: string, gasPrice: number): FeeTable => {
   }
 }
 
-// TODO: hit faucet
-// if (config.faucetUrl) {
-//   const acct = await client.getAccount();
-//   if (!acct?.balance?.length) {
-//     await ky.post(config.faucetUrl, { json: { ticker: "COSM", address } });
-//   }
-// }
-
 const connect = async (
   mnemonic: string,
   opts: Partial<Options>
