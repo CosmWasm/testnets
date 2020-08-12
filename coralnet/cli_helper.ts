@@ -52,7 +52,7 @@ const connect = async (
 }> => {
   const options: Options = { ...defaultOptions, ...opts }
   const feeTable = buildFeeTable(options.feeToken, options.gasPrice)
-  const wallet = await Secp256k1Wallet.fromMnemonic(mnemonic)
+  const wallet = await buildWallet(mnemonic)
   const [{ address }] = await wallet.getAccounts()
 
   const client = new SigningCosmWasmClient(
@@ -90,19 +90,22 @@ const hitFaucet = async (
   console.log(r.data)
 }
 
-const randomAddress = async (prefix: string): Promise<string> => {
+const randomAddress = async (): Promise<string> => {
   const mnemonic = Bip39.encode(Random.getBytes(16)).toString()
-  return mnemonicToAddress(prefix, mnemonic)
+  return mnemonicToAddress(mnemonic)
 }
 
 const mnemonicToAddress = async (
-  prefix: string,
   mnemonic: string
 ): Promise<string> => {
-  const wallet = await Secp256k1Wallet.fromMnemonic(mnemonic)
+  const wallet = await buildWallet(mnemonic);
   const [{ address }] = await wallet.getAccounts()
   return address
 }
+
+const buildWallet = (mnemonic: string): Promise<Secp256k1Wallet> => {
+  return Secp256k1Wallet.fromMnemonic(mnemonic, makeCosmoshubPath(0), defaultOptions.bech32prefix);
+} 
 
 const downloadWasm = async (url: string): Promise<Uint8Array> => {
   const r = await axios.get(url, { responseType: 'arraybuffer' })
