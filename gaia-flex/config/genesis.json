@@ -2537,7 +2537,54 @@
       }
     },
     "genutil": {
-      "gentxs": []
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "memo": "5577df9fc114ead3cbc2b9a3bfab670510004f39@192.168.1.13:26656",
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "commission": {
+                    "max_change_rate": "0.010000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "rate": "0.100000000000000000"
+                  },
+                  "delegator_address": "cosmos1lj0cuh34c5useycd2wl3puqfr57lxd39hn8qcv",
+                  "description": {
+                    "details": "",
+                    "identity": "",
+                    "moniker": "zlooba",
+                    "security_contact": "",
+                    "website": ""
+                  },
+                  "min_self_delegation": "1",
+                  "pubkey": "cosmosvalconspub1zcjduepq54yr5m5txzv443tdckvy7nls68fnduyv5vnm74ek6ru5n6uruk9qgmym0c",
+                  "validator_address": "cosmosvaloper1lj0cuh34c5useycd2wl3puqfr57lxd39j8n45l",
+                  "value": {
+                    "amount": "3000000000",
+                    "denom": "umuon"
+                  }
+                }
+              }
+            ],
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AnjNdE1PCgUmxmWyOOyB02cP3bfOkfqs5Aq6+ugUu4tE"
+                },
+                "signature": "gLQv57Zc5L3pbRh1cQmWkIOVG7c3UL5MSxS416ok3+kQuMdp0UHtlUugpEOHDm4gsJZt705iCGYPpAiCry05jw=="
+              }
+            ]
+          }
+        }
+      ]
     },
     "gov": {
       "deposit_params": {
