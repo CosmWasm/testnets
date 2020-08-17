@@ -2477,6 +2477,21 @@
             "public_key": null,
             "sequence": "0"
           }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "account_number": "0",
+            "address": "cosmos17fzz8v57p4uajhn2peysjgavyvveky2vnpemg6",
+            "coins": [
+              {
+                "amount": "10000000000",
+                "denom": "umuon"
+              }
+            ],
+            "public_key": null,
+            "sequence": "0"
+          }
         }
       ],
       "params": {
