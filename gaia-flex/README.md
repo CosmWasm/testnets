@@ -47,7 +47,7 @@ The general procedure is:
 
 1. Verify that your cosmos hub account has a balance on `gaia-flex` (call this hub address)
 2. Create a new key with `gaiaflex` cli for use on this chain (call this testnet address)
-3. Use `gaiaflex` to create an *unsigned tx* moving `umuon` from your hub address to your testnet address
+3. Use `gaiaflex` to create an *unsigned tx* moving `umuon` from your hub address to your testnet address. **USE gaiaflex NOT gaiacli**
 4. Copy unsigned tx to the machine with your cosmos hub keys and sign it using `gaiacli` in offline mode
 5. Copy signed tx back to your laptop (or wherever) and broadcast it to `gaia-flex`
 
