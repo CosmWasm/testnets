@@ -12,15 +12,9 @@
         "bech32PrefixValPub": "cosmosvaloperpub",
         "bech32PrefixConsAddr": "cosmosvalcons",
         "bech32PrefixConsPub": "cosmosvalconspub",
-        "bondDenom": "uatom",
+        "bondDenom": "umuon",
         "powerReduction": 1000000,
         "coins": [
-            {
-                "denom": "uatom",
-                "displayName": "ATOM",
-                "displayNamePlural": "ATOMS",
-                "fraction": 1000000
-            }, 
             {
                 "denom": "umuon",
                 "displayName": "MUON",
