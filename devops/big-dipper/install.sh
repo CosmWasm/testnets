@@ -5,6 +5,8 @@ set -euo pipefail
 apt update
 apt install -y docker.io docker-compose jq
 
+docker-compose pull
+
 METEOR_SETTINGS=$(jq -c < ./settings.json)
 APP_ROOT_URL="https://bigdipper.${DOMAIN}"
 
