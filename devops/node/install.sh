@@ -27,6 +27,7 @@ curl -sSL "$GENESIS_URL" > "${WASMD_HOME}/${CONFIG_DIR}/config/genesis.json"
 # get the app.toml config file
 curl -sSL "$APP_CONFIG_URL" > "${WASMD_HOME}/${CONFIG_DIR}/config/app.toml"
 
-# TODO: do this more selectively
-# disable firewall completely so all p2p/rpc ports are open
-ufw disable
+# enable ssh, p2p and lcd
+# maybe add prometheus when needed
+ufw allow 22,26656,26657/tcp
+

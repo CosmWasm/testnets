@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+ufw allow 22,80,443/tcp
+
 # set all variables
 REPOSITORY=${REPOSITORY:-cosmwasm/wasmd}
 DOCKER="$REPOSITORY:$WASMD_VERSION"
