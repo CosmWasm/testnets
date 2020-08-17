@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+# allow only ssh and http ports
+ufw allow 22,80,443/tcp
+
 # TODO: configure this better.. this is the bech32 prefix for the chain
 PREFIX=${PREFIX:-coral}
 
