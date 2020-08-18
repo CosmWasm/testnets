@@ -15,7 +15,7 @@ This is network demonstrates a gaia updated to launchpad with the x/wasm modules
 
 ## Connecting
 
-The configuration can be [downloaded here](./config.env).
+The configuration can be [downloaded here](./defaults.env).
 Please `source config` to get all variable you need.
 
 With those, you can follow the
@@ -23,15 +23,15 @@ With those, you can follow the
  on how to connect to a testnet.
 Or just connect your command-line client.
 
-The [genesis file](./genesis.json) is also available here.
+The [genesis file](./config/genesis.json) is also available here.
 
 ## Web endpoints
 
 Here we list all explorers, wallets, and apps you can access with a browser:
 
-* [Wasm Glass](https://demonet.wasm.glass) - contract explorer
-* [Name App](https://cosmwasm.github.io/name-app/) - Sample dApp interface to use the 
-  [nameservice contract](https://github.com/CosmWasm/cosmwasm-examples/tree/nameservice-0.5.2/nameservice) 
+* [RPC](https://rpc.gaia-flex.cosmwasm.com) - public RPC endpoint
+* [LCD](https://lcd.gaia-flex.cosmwasm.com) - public LCD endpoint
+* [Big Dipper/Block Explorer](https://bigdipper.gaia-flex.cosmwasm.com)
 
 
 ## Claiming the Airdrop
