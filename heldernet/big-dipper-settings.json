@@ -1,0 +1,54 @@
+{
+    "public":{
+        "chainName": "CosmWasm Heldernet(HackAtom V)",
+        "chainId": "hackatom-wasm",
+        "gtm": "{Add your Google Tag Manager ID here}",
+        "slashingWindow": 10000,
+        "uptimeWindow": 250,
+        "initialPageSize": 30,
+        "bech32PrefixAccAddr": "cosmos",
+        "bech32PrefixAccPub": "cosmospub",
+        "bech32PrefixValAddr": "cosmosvaloper",
+        "bech32PrefixValPub": "cosmosvaloperpub",
+        "bech32PrefixConsAddr": "cosmosvalcons",
+        "bech32PrefixConsPub": "cosmosvalconspub",
+        "bondDenom": "stake",
+        "powerReduction": 1000000,
+        "coins": [
+            {
+                "denom": "stake",
+                "displayName": "STAKE",
+                "displayNamePlural": "STAKES",
+                "fraction": 1000000
+            }, 
+            {
+                "denom": "ucosm",
+                "displayName": "COSM",
+                "displayNamePlural": "COSMS",
+                "fraction": 1000000
+            } 
+        ],
+        "gasPrice": 0.01,
+        "coingeckoId": "none"
+    },
+    "genesisFile": "https://raw.githubusercontent.com/CosmWasm/testnets/master/cosmosnet/config/genesis.json",
+    "remote":{
+        "rpc":"https://rpc.heldernet.cosmwasm.com",
+        "lcd":"https://lcd.heldernet.cosmwasm.com"
+    },
+    "debug": {
+        "startTimer": true,
+        "readGenesis": true
+    },
+    "params":{
+        "startHeight": 0,
+        "defaultBlockTime": 5000,
+        "blockInterval": 15000,
+        "consensusInterval": 1000,
+        "statusInterval":7500,
+        "signingInfoInterval": 1800000,
+        "proposalInterval": 5000,
+        "missedBlocksInterval": 60000,
+        "delegationInterval": 900000
+    }
+}
