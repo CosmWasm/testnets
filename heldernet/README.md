@@ -20,7 +20,7 @@ The [genesis file](./config/genesis.json) is also available here.
 
 Here we list all explorers, wallets, and apps you can access with a browser:
 
-* [RPC](https://rpc.coralnet.cosmwasm.com) - public RPC endpoint
+* [RPC](https://rpc.heldernet.cosmwasm.com) - public RPC endpoint
 * [LCD](https://lcd.heldernet.cosmwasm.com) - public LCD endpoint
 * [FAUCET](https://faucet.heldernet.cosmwasm.com) - faucet
 * [Big Dipper/Block Explorer](https://bigdipper.heldernet.cosmwasm.com)
