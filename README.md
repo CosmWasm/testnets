@@ -5,12 +5,13 @@ Information on all public CosmWasm testnets. Check [documentations](https://docs
 ## Running
 
 * [Gaia Flex](./gaia-flex)
-* [Coralnet](./coralnet)
+* [Heldernet](./heldernet)
 
 ## Upcoming
 
-*None*
+* [Musselnet](./musselnet) 24 October 2020
 
 ## Past
 
 * [Demo-10](./demo-10)
+* [Coralnet](./coralnet)
