@@ -19,6 +19,7 @@ Then you may want to set the following variables locally:
 * `MONIKER` - this is the moniker you use for the node. it should be unique and descriptive (required)
 * `WASMD_HOME` - this is the directory where all the data is stored. Default `/root`
 * `REPOSITORY` - the docker image repository to use. Default `cosmwasm/wasmd` (maybe you have a fork?)
+* `FULL_NODE` - set this variable if the node is full node, leave it if sentry
 
 Then run it like: `MONIKER=my-name-here ./install.sh`
 
@@ -46,7 +47,7 @@ To get the `node_id` of your current node, run `./node_id.sh`
 ## Systemd
 
 If you wish to run this under systemd, then run `services.sh` to set up a default config to auto-restart the node.
-This will install a service file with the binary name under eg `/etc/systemd/system/corald.service`,
+This will install a service file with the binary name under eg `/etc/systemd/system/wasmd.service`,
 enable it to start on reboot, and then start it running.
 
 You may also run this manually or use another supervisor and skip this step.

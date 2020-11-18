@@ -14,21 +14,53 @@ Some changes you may wish to make if you deploy this on a value-bearing network:
 
 However, for early testnets this should be enough to get started.
 
-## Setup
+## Testnet Launch Check List and Instructions
+
+Here are the check list for new testnet launch. 
+You can copy paste this section to new testnet folder to check you follow the steps correctly.
 
 All scripts rely heavily on environment variables to work correctly.
 You will want to `source ../<testnetname>/defaults.env` as a basis, then
 possibly declare a few more variables as desired.
 
-## Scripts
+### Genesis Configuration
 
-[Full Node](./node) - will help you start up a full node connected to a running network. Once this
-is synced up, you can stake to make it a validator.
+- [ ] Checkout to a new branch
+- [ ] Duplicate latest network directory and rename it to `newnet`
+- [ ] Clean genesis account and gentx in genesis file
+- [ ] Update chain-id
+- [ ] Update start time in genesis file
+- [ ] Update taking and fee token
+- [ ] Update replace bech32 addresses
+- [ ] Create a faucet address and add it to genesis, Make sure faucet has enough stake and fee tokens
+- [ ] Merge the branch to master
 
-[Public Endpoints](./endpoints) - will help you set up ssl certs and nginx config to serve rpc and lcd
-endpoints over https.
+### Full Node
+
+#### Validator
+
+- [ ] Spin a new server, Hetzner CX21 is sufficient
+- [ ] Clone https://github.com/CosmWasm/testnets
+- [ ] Follow [node instructions](node/README.md)
+- [ ] Setup [Public Endpoints](./endpoints): ssl certs and nginx config to serve rpc and lcd endpoints over https. 
+- [ ] Copy output of `node_id.sh` this will give you the node id to use in sentry set up
+- [ ] Merge the changes to the genesis to testnets repo
+
+#### Sentry
+
+- [ ] Spin a new server, Hetzner CX21 is sufficient
+- [ ] Clone https://github.com/CosmWasm/testnets
+- [ ] Follow [node instructions](node/README.md)
+- [ ] Setup [Public Endpoints](./endpoints): ssl certs and nginx config to serve rpc and lcd endpoints over https. 
+- [ ] Make sure RPC endpoint is working
+- [ ] Update `SEED_NODE` in newnet/defaults.env
+- [ ] Merge the changes to the genesis to testnets repo
+ 
+#### Faucet
 
 [Faucet](./faucet) - Also, you can optionally set up a faucet. However, you need to feed it with tokens
 so it has something to give out.
+
+#### Block Explorer
 
 [Block Explorer](./big-dipper) - You can optionally set up a block-explorer. [forbole/big-dipper](https://github.com/CosmWasm/big-dipper)
