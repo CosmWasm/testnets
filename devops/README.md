@@ -32,7 +32,7 @@ possibly declare a few more variables as desired.
 - [ ] Update start time in genesis file
 - [ ] Update taking and fee token
 - [ ] Update replace bech32 addresses
-- [ ] Create a faucet address and add it to genesis, Make sure faucet has enough stake and fee tokens
+- [ ] Create a reserve address and add it to genesis, Make sure reserve has enough stake and fee tokens
 - [ ] Merge the branch to master
 
 ### Full Node
