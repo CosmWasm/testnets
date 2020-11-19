@@ -34,7 +34,7 @@ possibly declare a few more variables as desired.
 - [ ] Update replace bech32 addresses
 - [ ] Create a reserve address and add it to genesis, Make sure reserve has enough stake and fee tokens
 - [ ] Add gen tx for validator node, collect-gentx, save `config/node_key.json` and `config/priv_validator.json`, delete them on this folder.
-  We will use this keys for validator setup later
+  While setting up validator move these keys to the validator machine.
 - [ ] Merge the branch to master
 
 ### Full Node
