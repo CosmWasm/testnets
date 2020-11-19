@@ -1,0 +1,54 @@
+{
+    "public":{
+        "chainName": "CosmWasm Musselnet",
+        "chainId": "musselnet",
+        "gtm": "{Add your Google Tag Manager ID here}",
+        "slashingWindow": 10000,
+        "uptimeWindow": 250,
+        "initialPageSize": 30,
+        "bech32PrefixAccAddr": "wasm",
+        "bech32PrefixAccPub": "wasmpub",
+        "bech32PrefixValAddr": "wasmvaloper",
+        "bech32PrefixValPub": "wasmvaloperpub",
+        "bech32PrefixConsAddr": "wasmvalcons",
+        "bech32PrefixConsPub": "wasmvalconspub",
+        "bondDenom": "ufrites",
+        "powerReduction": 1000000,
+        "coins": [
+            {
+                "denom": "ufrites",
+                "displayName": "FRITES",
+                "displayNamePlural": "FRITES",
+                "fraction": 1000000
+            }, 
+            {
+                "denom": "umayo",
+                "displayName": "MAYO",
+                "displayNamePlural": "MAYO",
+                "fraction": 1000000
+            } 
+        ],
+        "gasPrice": 0.01,
+        "coingeckoId": "none"
+    },
+    "genesisFile": "https://raw.githubusercontent.com/CosmWasm/testnets/master/musselnet/config/genesis.json",
+    "remote":{
+        "rpc":"https://rpc.musselnet.cosmwasm.com",
+        "lcd":"https://lcd.musselnet.cosmwasm.com"
+    },
+    "debug": {
+        "startTimer": true,
+        "readGenesis": true
+    },
+    "params":{
+        "startHeight": 0,
+        "defaultBlockTime": 5000,
+        "blockInterval": 15000,
+        "consensusInterval": 1000,
+        "statusInterval":7500,
+        "signingInfoInterval": 1800000,
+        "proposalInterval": 5000,
+        "missedBlocksInterval": 60000,
+        "delegationInterval": 900000
+    }
+}
