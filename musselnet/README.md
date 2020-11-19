@@ -1,4 +1,4 @@
-# Musslenet
+# Musselnet
 
 Successor of Coralnet. Stargate including out of the box IBC functionality
 
@@ -10,11 +10,13 @@ Successor of Coralnet. Stargate including out of the box IBC functionality
 
 The [genesis file](./config/genesis.json) is here.
 
+- **Fee token:** `umayo`
+- **Staking token:** `ufrites`
 ## Web endpoints
 
 Here we list all explorers, wallets, and apps you can access with a browser:
 
-* [RPC](https://rpc.musslenet.cosmwasm.com) - public RPC endpoint
-* [LCD](https://lcd.musslenet.cosmwasm.com) - public LCD endpoint
-* [FAUCET](https://faucet.musslenet.cosmwasm.com) - faucet
-* [Big Dipper/Block Explorer](https://bigdipper.musslenet.cosmwasm.com)
+* [RPC](https://rpc.musselnet.cosmwasm.com) - public RPC endpoint
+* [LCD](https://lcd.musselnet.cosmwasm.com) - public LCD endpoint
+* [FAUCET](https://faucet.musselnet.cosmwasm.com) - faucet
+* [Big Dipper/Block Explorer](https://bigdipper.musselnet.cosmwasm.com)

@@ -1,6 +1,6 @@
 {
   "genesis_time": "2020-11-24T12:00:00Z",
-  "chain_id": "musslenet",
+  "chain_id": "musselnet",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -200,7 +200,7 @@
           "address": ""
         },
         "instantiate_default_permission": "Everybody",
-        "max_wasm_code_size": "614400"
+        "max_wasm_code_size": "716800"
       },
       "codes": [],
       "contracts": [],

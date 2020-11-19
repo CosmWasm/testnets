@@ -1,7 +1,7 @@
 {
     "public":{
-        "chainName": "CosmWasm musslenet",
-        "chainId": "musslenet",
+        "chainName": "CosmWasm Musselnet",
+        "chainId": "musselnet",
         "gtm": "{Add your Google Tag Manager ID here}",
         "slashingWindow": 10000,
         "uptimeWindow": 250,
@@ -18,23 +18,23 @@
             {
                 "denom": "ufrites",
                 "displayName": "FRITES",
-                "displayNamePlural": "STAKES",
+                "displayNamePlural": "FRITES",
                 "fraction": 1000000
             }, 
             {
                 "denom": "umayo",
                 "displayName": "MAYO",
-                "displayNamePlural": "COSMS",
+                "displayNamePlural": "MAYO",
                 "fraction": 1000000
             } 
         ],
         "gasPrice": 0.01,
         "coingeckoId": "none"
     },
-    "genesisFile": "https://raw.githubusercontent.com/CosmWasm/testnets/master/musslenet/config/genesis.json",
+    "genesisFile": "https://raw.githubusercontent.com/CosmWasm/testnets/master/musselnet/config/genesis.json",
     "remote":{
-        "rpc":"https://rpc.musslenet.cosmwasm.com",
-        "lcd":"https://lcd.musslenet.cosmwasm.com"
+        "rpc":"https://rpc.musselnet.cosmwasm.com",
+        "lcd":"https://lcd.musselnet.cosmwasm.com"
     },
     "debug": {
         "startTimer": true,

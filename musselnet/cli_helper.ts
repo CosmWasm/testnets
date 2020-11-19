@@ -7,14 +7,14 @@ interface Options {
 }
 
 const defaultOptions: Options = {
-  httpUrl: 'https://lcd.musslenet.cosmwasm.com',
-  networkId: 'musslenet',
+  httpUrl: 'https://rpc.musselnet.cosmwasm.com',
+  networkId: 'musselnet',
   feeToken: 'umayo',
   gasPrice: 0.01,
-  bech32prefix: 'cosmos',
+  bech32prefix: 'wasm',
 }
 
-const defaultFaucetUrl = 'https://faucet.musslenet.cosmwasm.com/credit'
+const defaultFaucetUrl = 'https://faucet.musselnet.cosmwasm.com/credit'
 
 const buildFeeTable = (feeToken: string, gasPrice: number): FeeTable => {
   const stdFee = (gas: number, denom: string, price: number) => {
