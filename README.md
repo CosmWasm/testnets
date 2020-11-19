@@ -20,3 +20,7 @@ Information on all public CosmWasm testnets. Check
 ## Checklist
 
 Testnet launch preparation is at [CHECKLIST.md](./CHECKLIST.md)
+
+## DevOps
+
+[devops scripts](devops) are open for anyone to use and contribute.
