@@ -19,7 +19,6 @@ Then you may want to set the following variables locally:
 * `MONIKER` - this is the moniker you use for the node. it should be unique and descriptive (required)
 * `WASMD_HOME` - this is the directory where all the data is stored. Default `/root`
 * `REPOSITORY` - the docker image repository to use. Default `cosmwasm/wasmd` (maybe you have a fork?)
-* `FULL_NODE` - set this variable if the node is full node, leave it if sentry
 
 Then run it like: `MONIKER=my-name-here ./install.sh`
 
@@ -43,6 +42,8 @@ in order to get attached. These all look like `${node_id}@${ip}:${port}`. Node_i
 public key, so you can recognize the same machine if it moves ips.
 
 To get the `node_id` of your current node, run `./node_id.sh`
+
+Remember to allow or disallow rpc endpoints for sentry and validators.
 
 ## Systemd
 
