@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2020-11-19T08:14:05.421330718Z",
-  "chain_id": "test-chain-5ErWj3",
+  "genesis_time": "2020-11-24T12:00:00.0Z",
+  "chain_id": "musslenet",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -47,7 +47,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "stake",
+        "denom": "ufrites",
         "amount": "1000"
       }
     },
@@ -84,7 +84,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "stake",
+            "denom": "ufrites",
             "amount": "10000000"
           }
         ],
@@ -151,7 +151,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 100,
-        "bond_denom": "stake"
+        "bond_denom": "ufrites"
       },
       "last_total_power": "0",
       "last_validator_powers": [],
