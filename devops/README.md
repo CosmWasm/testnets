@@ -40,16 +40,14 @@ possibly declare a few more variables as desired.
 #### Validator
 
 - [ ] Spin a new server, Hetzner CX21 is sufficient
-- [ ] Clone https://github.com/CosmWasm/testnets
-- [ ] Follow [node instructions](node/README.md), make sure you set `FULL_NODE` variable for fullnode setup
-- [ ] Copy output of `node_id.sh` this will give you the node id to use in sentry set up
+- [ ] Follow [node instructions](node/README.md)
+- [ ] Copy output of `node_id.sh` this will give you the node id to use in sentry/seed set up
 - [ ] Merge the changes to the genesis to testnets repo
 
 #### Sentry
 
 - [ ] Spin a new server, Hetzner CX21 is sufficient
-- [ ] Clone https://github.com/CosmWasm/testnets
-- [ ] Follow [node instructions](node/README.md), make sure you unset `FULL_NODE` variable for sentry setup.
+- [ ] Follow [node instructions](node/README.md)
 - [ ] Setup [Public Endpoints](./endpoints): ssl certs and nginx config to serve rpc and lcd endpoints over https. 
 - [ ] Make sure RPC endpoint is working
 - [ ] Update `SEED_NODE` in newnet/defaults.env
