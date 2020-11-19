@@ -1,6 +1,8 @@
 # Set up a Full Node
 
-These instructions work for a machine running Ubuntu 20.04.
+These instructions work for a machine running Ubuntu 20.04. 
+
+Optimal Requirements: 2 CPU, 4 GB RAM, 40 GB SSD.
 
 First, copy all files from this directory to the machine:
 

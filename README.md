@@ -1,17 +1,26 @@
 # CosmWasm Testnets
 
-Information on all public CosmWasm testnets. Check [documentations](https://docs.cosmwasm.com/testnets/build-requirements.html) for detailed setup demonstration.
+Information on all public CosmWasm testnets. Check 
+[documentations](https://docs.cosmwasm.com/testnets/build-requirements.html) for detailed setup demonstrations.
 
-## Running
+### Running
 
 * [Gaia Flex](./gaia-flex)
 * [Heldernet](./heldernet)
 
-## Upcoming
+### Upcoming
 
 * [Musselnet](./musselnet) 24 October 2020
 
-## Past
+### Past
 
 * [Demo-10](./demo-10)
 * [Coralnet](./coralnet)
+
+## Checklist
+
+Testnet launch preparation is at [CHECKLIST.md](./CHECKLIST.md)
+
+## DevOps
+
+[devops scripts](devops) are open for anyone to use and contribute.
