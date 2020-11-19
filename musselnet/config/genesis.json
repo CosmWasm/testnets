@@ -1,6 +1,7 @@
 {
-  "genesis_time": "2020-10-24T12:00:00.0Z",
-  "chain_id": "musslenet",
+  "genesis_time": "2020-11-19T08:14:05.421330718Z",
+  "chain_id": "test-chain-5ErWj3",
+  "initial_height": "1",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -9,23 +10,45 @@
     },
     "evidence": {
       "max_age_num_blocks": "100000",
-      "max_age_duration": "172800000000000"
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
     },
     "validator": {
       "pub_key_types": [
         "ed25519"
       ]
-    }
+    },
+    "version": {}
   },
   "app_hash": "",
   "app_state": {
-    "params": null,
-    "wasm": {
+    "auth": {
       "params": {
-        "code_upload_access": {
-          "permission": "Everybody"
-        },
-        "instantiate_default_permission": "Everybody"
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [],
+      "supply": [],
+      "denom_metadata": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "stake",
+        "amount": "1000"
       }
     },
     "distribution": {
@@ -47,41 +70,54 @@
       "delegator_starting_infos": [],
       "validator_slash_events": []
     },
+    "evidence": {
+      "evidence": []
+    },
+    "genutil": {
+      "gen_txs": []
+    },
     "gov": {
       "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "ufrites",
+            "denom": "stake",
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "172800000000000"
+        "max_deposit_period": "172800s"
       },
       "voting_params": {
-        "voting_period": "172800000000000"
+        "voting_period": "172800s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
+        "veto_threshold": "0.334000000000000000"
       }
     },
-    "auth": {
-      "params": {
-        "max_memo_characters": "256",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "create_localhost": false
       },
-      "accounts": []
-    },
-    "genutil": {
-      "gentxs": []
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": []
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": []
+      }
     },
     "mint": {
       "minter": {
@@ -89,7 +125,7 @@
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "ufrites",
+        "mint_denom": "stake",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
@@ -97,51 +133,56 @@
         "blocks_per_year": "6311520"
       }
     },
-    "bank": {
-      "send_enabled": true
-    },
-    "staking": {
-      "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "historical_entries": 0,
-        "bond_denom": "ufrites"
-      },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
-    },
-    "evidence": {
-      "params": {
-        "max_evidence_age": "120000000000"
-      },
-      "evidence": []
-    },
-    "supply": {
-      "supply": []
-    },
-    "crisis": {
-      "constant_fee": {
-        "denom": "ufrites",
-        "amount": "1000"
-      }
-    },
-    "upgrade": {},
+    "params": null,
     "slashing": {
       "params": {
         "signed_blocks_window": "100",
         "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600000000000",
+        "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"
       },
-      "signing_infos": {},
-      "missed_blocks": {}
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 100,
+        "bond_denom": "stake"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      }
+    },
+    "upgrade": {},
+    "vesting": {},
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody",
+          "address": ""
+        },
+        "instantiate_default_permission": "Everybody",
+        "max_wasm_code_size": "614400"
+      },
+      "codes": [],
+      "contracts": [],
+      "sequences": []
     }
   }
 }
