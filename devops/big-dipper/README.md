@@ -1,6 +1,8 @@
 # Set up a Block explorer
 
 These instructions work for a machine running Ubuntu 20.04.
+**Make sure you setup an external volume named /mnt/db-volume to 
+keep big-dipper data to preserve data in case of update**
 
 First, copy all files from this directory to the machine:
 
