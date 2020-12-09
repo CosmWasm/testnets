@@ -70,7 +70,7 @@ Example for musselnet, values taken from `defaults.env`, `validator` being your 
 wasmd config chain-id musselnet
 wasmd config node https://rpc.musselnet.cosmwasm.com:443
 
-wasmd query account $(coral keys show -a validator)
+wasmd query account $(wasmd keys show -a validator)
 ```
 
 And get your pubkey from the validator machine:
