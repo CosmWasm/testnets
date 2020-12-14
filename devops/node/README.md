@@ -10,11 +10,11 @@ First, copy all files from this directory to the machine:
 
 Also, copy the proper env for the testnet you choose:
 
-`scp ../../coralnet/defaults.env root@1.2.3.4:`
+`scp ../../musselnet/defaults.env root@1.2.3.4:`
 
 ## Installing
 
-First, source all the defaults: `source defaults.sh`
+First, source all the defaults: `source defaults.env`
 
 Then you may want to set the following variables locally:
 
@@ -26,7 +26,7 @@ Then run it like: `MONIKER=my-name-here ./install.sh`
 
 The script must be run as root. If you are not logged in as root, try `sudo -E install.sh`
 
-Running this will set up all dependencies and create a local wasmd config for the proper testnet.
+Running this will set up all dependencies, create a local wasmd config for the proper testnet and will run node in docker container.
 
 ## Configuring
 
@@ -55,18 +55,22 @@ enable it to start on reboot, and then start it running.
 
 You may also run this manually or use another supervisor and skip this step.
 
+## Docker container
+
+If you are following instructions from this page you should run commands directly from docker container. In this case you will need to use `docker exec -it wasmd wasmd` instead of `wasmd` command.
+
 ## Staking
 
 Once your node has caught up, if you want to become a validator, just delegate some funds to it.
 
 First, make sure you can connect to it and control an account with some funds.
-Example for coralnet, values taken from `defaults.env`, `validator` being your local name for a key with funds behind it:
+Example for musselnet, values taken from `defaults.env`, `validator` being your local name for a key with funds behind it:
 
 ```bash
-coral config chain-id cosmwasm-coral
-coral config node https://rpc.coralnet.cosmwasm.com:443
+wasmd config chain-id musselnet
+wasmd config node https://rpc.musselnet.cosmwasm.com:443
 
-coral query account $(coral keys show -a validator)
+wasmd query account $(wasmd keys show -a validator)
 ```
 
 And get your pubkey from the validator machine:
@@ -79,16 +83,16 @@ root@validator$ ./show_validator.sh
 Then see [testnet instructions](https://docs.cosmwasm.com/testnets/testnets.html) or just run a command like:
 
 ```bash
-coral tx staking create-validator \
-  --amount=100000000ureef \
+wasmd tx staking create-validator \
+  --amount="100000000ufrites" \
   --pubkey=${VAL_PUBKEY} \
   --moniker=$MONIKER \
-  --chain-id=cosmwasm-coral \
+  --chain-id=musselnet \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1" \
   --gas="400000" \
-  --fees="20000ushell" \
+  --fees="5000umayo" \
   --from=validator
 ```
