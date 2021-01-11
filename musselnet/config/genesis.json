@@ -25,11 +25,11 @@
           "address": "wasm1dncllujyss2rrxy4dqd7xj5jf2n7eg7jtrmp5t",
           "coins": [
             {
-              "amount": "10000000000000000000",
+              "amount": "10000000000000000000000",
               "denom": "ufrites"
             },
             {
-              "amount": "10000000000000000000",
+              "amount": "100000000000000000000000",
               "denom": "umayo"
             }
           ]
@@ -101,14 +101,14 @@
           },
           "body": {
             "extension_options": [],
-            "memo": "4b29be1f604658cd06f1ee51dfb55a717e2b8c96@10.76.173.146:26656",
+            "memo": "3b57ffda777cfcddb507c1dc2353c06cd64a4f3b@192.168.0.16:26656",
             "messages": [
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "commission": {
                   "max_change_rate": "0.010000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "rate": "0.100000000000000000"
+                  "max_rate": "1.000000000000000000",
+                  "rate": "0.070000000000000000"
                 },
                 "delegator_address": "wasm1dncllujyss2rrxy4dqd7xj5jf2n7eg7jtrmp5t",
                 "description": {
@@ -121,11 +121,11 @@
                 "min_self_delegation": "1",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "uekLdtP6ofaGyLK3Z1Bc6GTWt2UDfU1PF+JGnJyeKnU="
+                  "key": "JdNa/lZk9859lcKdXdAZne+WWZTsy/QYzWrjaO33O24="
                 },
                 "validator_address": "wasmvaloper1dncllujyss2rrxy4dqd7xj5jf2n7eg7j7lwa63",
                 "value": {
-                  "amount": "2110099000",
+                  "amount": "100000000",
                   "denom": "ufrites"
                 }
               }
@@ -134,7 +134,7 @@
             "timeout_height": "0"
           },
           "signatures": [
-            "X0t+ZvNTMEXhIV8hvnemp+WPvZc/3gf7f6wat63IL49QsF4FZla/roNVBAIagvweR6g+icHdY5hXgvaLaOkrOA=="
+            "qIVJ+98OItZkqzVBwkm/IYGXRS2acHFDiZfnrCbJv8U7LUap1mYNWJe7vAZ6UfYpn/ZF3491X4P7zEzqDOOwdg=="
           ]
         }
       ]
@@ -168,6 +168,7 @@
         "acknowledgements": [],
         "channels": [],
         "commitments": [],
+        "next_channel_sequence": "0",
         "receipts": [],
         "recv_sequences": [],
         "send_sequences": []
@@ -175,11 +176,20 @@
       "client_genesis": {
         "clients": [],
         "clients_consensus": [],
-        "create_localhost": false
+        "clients_metadata": [],
+        "create_localhost": false,
+        "next_client_sequence": "0",
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint"
+          ]
+        }
       },
       "connection_genesis": {
         "client_connection_paths": [],
-        "connections": []
+        "connections": [],
+        "next_connection_sequence": "0"
       }
     },
     "mint": {
@@ -193,7 +203,7 @@
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
         "inflation_rate_change": "0.130000000000000000",
-        "mint_denom": "stake"
+        "mint_denom": "ufrites"
       }
     },
     "params": null,
@@ -215,7 +225,7 @@
       "last_validator_powers": [],
       "params": {
         "bond_denom": "ufrites",
-        "historical_entries": 100,
+        "historical_entries": 10000,
         "max_entries": 7,
         "max_validators": 100,
         "unbonding_time": "1814400s"
@@ -237,18 +247,19 @@
     "wasm": {
       "codes": [],
       "contracts": [],
+      "gen_msgs": [],
       "params": {
         "code_upload_access": {
           "address": "",
           "permission": "Everybody"
         },
         "instantiate_default_permission": "Everybody",
-        "max_wasm_code_size": "716800"
+        "max_wasm_code_size": "614400"
       },
       "sequences": []
     }
   },
-  "chain_id": "musselnet",
+  "chain_id": "musselnet-2",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -267,6 +278,6 @@
     },
     "version": {}
   },
-  "genesis_time": "2020-11-24T12:00:00Z",
+  "genesis_time": "2021-01-11T15:30:00Z",
   "initial_height": "1"
 }

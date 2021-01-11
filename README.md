@@ -9,7 +9,7 @@ Information on all public CosmWasm testnets. Check
 |------------------------------|------------|----------|
 | [Gaia Flex](./gaia-flex)     | 2020-08-18 | 0.10     |
 | [Heldernet](./heldernet)     | 2020-10-16 | 0.11     |
-| [Musselnet](./musselnet)     | 2020-11-24 | 0.12     |
+| [Musselnet](./musselnet)     | 2021-01-11 | 0.14     |
 
 ### Upcoming
 
