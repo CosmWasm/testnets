@@ -20,3 +20,4 @@ Here we list all explorers, wallets, and apps you can access with a browser:
 * [RPC](https://rpc.musselnet.cosmwasm.com) - public RPC endpoint
 * [LCD](https://lcd.musselnet.cosmwasm.com) - public LCD endpoint
 * [FAUCET](https://faucet.musselnet.cosmwasm.com) - faucet
+* [CODE EXPLORER](https://code-explorer.musselnet.cosmwasm.com) - code explorer
