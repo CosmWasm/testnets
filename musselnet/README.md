@@ -21,3 +21,4 @@ Here we list all explorers, wallets, and apps you can access with a browser:
 * [LCD](https://lcd.musselnet.cosmwasm.com) - public LCD endpoint
 * [FAUCET](https://faucet.musselnet.cosmwasm.com) - faucet
 * [CODE EXPLORER](https://code-explorer.musselnet.cosmwasm.com) - code explorer
+* [BlOCK EXPLORER](https://musselnet.cosmwasm.aneka.io/validators) - block explorer
