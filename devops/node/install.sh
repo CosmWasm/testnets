@@ -32,4 +32,4 @@ curl -sSL "$CONFIG_URL" > "${WASMD_HOME}/${CONFIG_DIR}/config/config.toml"
 
 # enable ssh, p2p
 # maybe add prometheus when needed
-ufw allow 22,26656,26657/tcp
+ufw allow 22,26656,26657,9090,9091/tcp
