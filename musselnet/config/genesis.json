@@ -9,6 +9,13 @@
           "address": "wasm1dncllujyss2rrxy4dqd7xj5jf2n7eg7jtrmp5t",
           "pub_key": null,
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "0",
+          "address": "wasm1hdz8pdf7ygczjun6gdvs8395hxvz7hl6mpj2sd",
+          "pub_key": null,
+          "sequence": "0"
         }
       ],
       "params": {
@@ -30,6 +37,19 @@
             },
             {
               "amount": "100000000000000000000000",
+              "denom": "umayo"
+            }
+          ]
+        },
+        {
+          "address": "wasm1hdz8pdf7ygczjun6gdvs8395hxvz7hl6mpj2sd",
+          "coins": [
+            {
+              "amount": "100000000",
+              "denom": "ufrites"
+            },
+            {
+              "amount": "100000000",
               "denom": "umayo"
             }
           ]
