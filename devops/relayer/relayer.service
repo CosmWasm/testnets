@@ -1,0 +1,18 @@
+[Unit]
+Description=relayer
+Requires=network-online.target
+After=network-online.target
+Requires=docker.service
+After=docker.service
+
+[Service]
+TimeoutStartSec=5
+Restart=always
+User=root
+Group=root
+ExecStart=/usr/bin/docker run --rm --name relayer --mount type=bind,source=RELAYER_HOME,target=/root/.relayer DOCKER start PATH_NAME
+ExecStop=/usr/bin/docker stop -t 2 relayer
+
+[Install]
+WantedBy=multi-user.target
+
