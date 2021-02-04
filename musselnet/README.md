@@ -22,3 +22,6 @@ Here we list all explorers, wallets, and apps you can access with a browser:
 * [FAUCET](https://faucet.musselnet.cosmwasm.com) - faucet
 * [CODE EXPLORER](https://code-explorer.musselnet.cosmwasm.com) - code explorer
 * [BlOCK EXPLORER](https://musselnet.cosmwasm.aneka.io/validators) - block explorer
+* [dApps](https://dapps.cosmwasm.com/) - a collection of Stargate-ready dApps running on CosmWasm, including:
+  * [Wallet](https://dapps.cosmwasm.com/wallet) - wallet for native tokens
+  * [Staking](https://dapps.cosmwasm.com/staking) - stake tokens on validators of your choice
