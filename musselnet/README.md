@@ -3,9 +3,9 @@
 Successor of Coralnet. Stargate including out of the box IBC functionality
 
 - **go version**: `1.15+`
-- **wasmd version**: [`v0.14.0`](https://github.com/CosmWasm/wasmd/releases/tag/v0.14.0)
+- **wasmd version**: [`v0.15.0`](https://github.com/CosmWasm/wasmd/releases/tag/v0.15.0)
 - **wasmd build command**: `make build`
-- **CosmJS version**: `v0.24.0`
+- **CosmJS version**: `v0.23.0`
 - **start**: 01st January 2021
 
 The [genesis file](./config/genesis.json) is here.

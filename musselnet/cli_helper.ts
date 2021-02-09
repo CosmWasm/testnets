@@ -8,7 +8,7 @@ interface Options {
 
 const defaultOptions: Options = {
   httpUrl: 'https://rpc.musselnet.cosmwasm.com',
-  networkId: 'musselnet',
+  networkId: 'musselnet-3',
   feeToken: 'umayo',
   gasPrice: 0.01,
   bech32prefix: 'wasm',
