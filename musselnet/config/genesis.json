@@ -58,11 +58,11 @@
           "coins": [
             {
               "denom": "ufrites",
-              "amount": "100000"
+              "amount": "100000000"
             },
             {
               "denom": "umayo",
-              "amount": "100000"
+              "amount": "100000000"
             }
           ]
         },
@@ -143,7 +143,7 @@
                 },
                 "value": {
                   "denom": "ufrites",
-                  "amount": "100000"
+                  "amount": "100000000"
                 }
               }
             ],
@@ -175,7 +175,7 @@
             }
           },
           "signatures": [
-            "d6SJnHgD22wPSo0EE9Isk6x+BO079fIywak6zNLYqdJkHKsRpI0+Hg1qtg0Odc773GaPh4Tgb+WZON0JY7hK3w=="
+            "WLBypUE3GIYCeuznfQtGjbAEg9qzg9MFYx5at+akL0VdX+lkyEqGt/t9euDh/ItaNGhLTIUjBCf76CXjmeCmRQ=="
           ]
         }
       ]
