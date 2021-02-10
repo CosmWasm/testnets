@@ -58,11 +58,11 @@
           "coins": [
             {
               "denom": "ufrites",
-              "amount": "100000"
+              "amount": "100000000"
             },
             {
               "denom": "umayo",
-              "amount": "100000"
+              "amount": "100000000"
             }
           ]
         },
@@ -71,11 +71,11 @@
           "coins": [
             {
               "denom": "ufrites",
-              "amount": "100000000"
+              "amount": "10000000000"
             },
             {
               "denom": "umayo",
-              "amount": "1000000000"
+              "amount": "100000000000"
             }
           ]
         }
@@ -89,7 +89,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "amount": "5000",
+        "amount": "50000",
         "denom": "ufrites"
       }
     },
@@ -124,7 +124,7 @@
         "max_deposit_period": "172800s",
         "min_deposit": [
           {
-            "amount": "200000",
+            "amount": "20000000",
             "denom": "ufrites"
           }
         ]
