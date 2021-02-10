@@ -11,6 +11,7 @@ Group=root
 Environment=DAEMON_HOME=WASMD_HOME
 Environment=DAEMON_NAME=wasmd
 Environment=DAEMON_RESTART_AFTER_UPGRADE=true
+Environment=DAEMON_ALLOW_DOWNLOAD_BINARIES=true
 ExecStart=COSMOVISOR_BINARY_DIR/cosmovisor start --rpc.laddr tcp://0.0.0.0:26657 --home WASMD_HOME
 KillSignal=SIGKILL
 
