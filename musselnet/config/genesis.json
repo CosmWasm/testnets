@@ -40,7 +40,7 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "wasm1xk8hscxvl6j6qnw55kguvxx5k6r9lusdl55awy",
+          "address": "wasm1jspllaen0u5dymzgexj4rwz5yfzstyqygnztwn",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -54,7 +54,7 @@
       },
       "balances": [
         {
-          "address": "wasm1xk8hscxvl6j6qnw55kguvxx5k6r9lusdl55awy",
+          "address": "wasm1jspllaen0u5dymzgexj4rwz5yfzstyqygnztwn",
           "coins": [
             {
               "denom": "ufrites",
