@@ -64,6 +64,8 @@ curl -sSL "$GENESIS_URL" > "${WASMD_HOME}/config/genesis.json"
 # get the app.toml config file
 curl -sSL "$APP_CONFIG_URL" > "${WASMD_HOME}/config/app.toml"
 
+sed -i "s,val_moniker,$MONIKER,g" "${WASMD_HOME}/config/app.toml"
+
 # get the app.toml config file
 curl -sSL "$CONFIG_URL" > "${WASMD_HOME}/config/config.toml"
 
