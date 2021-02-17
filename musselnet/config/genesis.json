@@ -196,7 +196,313 @@
       "evidence": []
     },
     "genutil": {
-      "gen_txs": []
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "confio-3",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1wdsryvt0lyxse3f9n28d4tpnun63l82tpxsefx",
+                "validator_address": "wasmvaloper1wdsryvt0lyxse3f9n28d4tpnun63l82t56998u",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "YO6oy7ylvhlcV72J/eSCY0DnEyYzbecWMrigjHOJpQU="
+                },
+                "value": {
+                  "denom": "ufrites",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "23e5af97f01fc7b1767c72f93960f49673f181ad@168.119.50.130:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AvjqJKOtNxSn3iTRWnuLS/Gem1KQfFTKgLcwgg7UkR/d"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "OqVjG7KouRyROXN9aq0MsL9BotYUsLlh0Ld9dernqo1PdBdQH8cM8iQDC60wfIFM7KN3gsXd72oKwaDvmjIcTQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "confio-5",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1pllh835mch9qwsruj47fgq707xvjtk7mae5q7x",
+                "validator_address": "wasmvaloper1pllh835mch9qwsruj47fgq707xvjtk7mg9pusu",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "Jq4AxZXdcE+w89SuDXW2itJEFjv5pmRZKxJnseUkqus="
+                },
+                "value": {
+                  "denom": "ufrites",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "47dfd0daf4e552d991d8ce62f38e5df11a017553@168.119.102.152:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A6i4Al60TJnN/+MNnlRlVbyPbfFsRN710OL+YlFzjcEo"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "qi1q+a3JJfPvLsTt0vnNpGPeVTmkUQVfhMIKWzgsZUFI5yLUNwMmr+R+AN1WCUeltJoVR07T6v5yTyVmj5pNTg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "confio-1",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1yfkrs4ynk9xwnrmnv0xyde9sdpp3fmjvn74tha",
+                "validator_address": "wasmvaloper1yfkrs4ynk9xwnrmnv0xyde9sdpp3fmjvxzqhe8",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "aeePmF9l06RJV/ZwhwpNz//XaOf2M/usl7O5UoJ6djY="
+                },
+                "value": {
+                  "denom": "ufrites",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "94a889e21ee27141570164c69d6ab0c104dd8639@159.69.118.95:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AnpEK/ynAtex0q5DJ+VkBl2BRMZ57zy9DOUN/4yNGRlT"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "qOFi0k1p0pidhlsCYmhcCM2C7ZZQUjlJquL/IXkvKn9yoP8FHdN/sMkD1cwELlfHKbs3D77fGr1oyq6wkYPX9g=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "confio-4",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1myqp75p0jvwpudxmny675jqu2jpksssupg5w4m",
+                "validator_address": "wasmvaloper1myqp75p0jvwpudxmny675jqu2jpksssu55pjmp",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "qB2UCCrswj8sHXjZkLjaddh08d3/HaFenzK6S6woY0s="
+                },
+                "value": {
+                  "denom": "ufrites",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "c065c5ac440d1a9ba484a9a8b25c24d264b0a1a6@49.12.67.47:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AlOGZyGgqj7faLHA26x7UI5EU67gL1CHB9Ux8KFNUiXX"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "egPRNxOL3cpss+nkEkPwgCzQ/XEDi030k0PyHbzTvIsXeItKJoimfdpja7pht/sdt5GBw1M7+ddxhdy886qidg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "confio-2",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1a07j8jcsge37ngmgm4ucz7kdck66g3dtjnqcp0",
+                "validator_address": "wasmvaloper1a07j8jcsge37ngmgm4ucz7kdck66g3dt804y04",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "twgJefS1QyFAD5a6pzi+6SAIQ6+Zihc/uvaZEmwmCos="
+                },
+                "value": {
+                  "denom": "ufrites",
+                  "amount": "1000000"
+                }
+              }
+            ],
+            "memo": "cd895f38e118d8180dc8fdd7a54f11f5fc44eef0@168.119.49.23:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "ApLKR4YbRT5iNK23Vb7jzWwsurkOvmfHzypueniWuCmM"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "oXLyycC5hXdRIs7FF00c3vx5h5Sf0KGe50Mf22ZWQwNF3qVTFLhZExLpCgqY2P8iMdXHsGO0fbMB0YYZ98HUWA=="
+          ]
+        }
+      ]
     },
     "gov": {
       "deposit_params": {
