@@ -8,11 +8,11 @@ TimeoutStartSec=5
 Restart=always
 User=root
 Group=root
-Environment=DAEMON_HOME=APP_HOMEi
+Environment=DAEMON_HOME=APP_HOME
 Environment=DAEMON_NAME=wasmd
 Environment=DAEMON_RESTART_AFTER_UPGRADE=true
 Environment=DAEMON_ALLOW_DOWNLOAD_BINARIES=true
-ExecStart=COSMOVISOR_BINARY_DIR/cosmovisor start --rpc.laddr tcp://0.0.0.0:26657 --home WASMD_HOME
+ExecStart=COSMOVISOR_BINARY_DIR/cosmovisor start --rpc.laddr tcp://0.0.0.0:26657 --home APP_HOME
 KillSignal=SIGKILL
 
 [Install]
