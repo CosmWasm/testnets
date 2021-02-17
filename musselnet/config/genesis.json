@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2021-02-16T23:00:00Z",
+  "genesis_time": "2021-02-17T10:00:00Z",
   "chain_id": "musselnet-4",
   "initial_height": "1",
   "consensus_params": {
@@ -32,6 +32,7 @@
       },
       "accounts": [
         {
+          "//name": "reserve",
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "wasm1dncllujyss2rrxy4dqd7xj5jf2n7eg7jtrmp5t",
           "pub_key": null,
@@ -39,6 +40,7 @@
           "sequence": "0"
         },
         {
+          "//name": "confio-1 validator",
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "wasm1yfkrs4ynk9xwnrmnv0xyde9sdpp3fmjvn74tha",
           "pub_key": null,
@@ -46,8 +48,33 @@
           "sequence": "0"
         },
         {
+          "//name": "confio-2 validator",
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm1a07j8jcsge37ngmgm4ucz7kdck66g3dtjnqcp0",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "//name": "confio-3 validator",
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "wasm1wdsryvt0lyxse3f9n28d4tpnun63l82tpxsefx",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "//name": "confio-4 validator",
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm1myqp75p0jvwpudxmny675jqu2jpksssupg5w4m",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "//name": "confio-5 validator",
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm1pllh835mch9qwsruj47fgq707xvjtk7mae5q7x",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -61,19 +88,7 @@
       },
       "balances": [
         {
-          "address": "wasm1yfkrs4ynk9xwnrmnv0xyde9sdpp3fmjvn74tha",
-          "coins": [
-            {
-              "denom": "ufrites",
-              "amount": "1000000"
-            },
-            {
-              "denom": "umayo",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
+          "//name": "reserve",
           "address": "wasm1dncllujyss2rrxy4dqd7xj5jf2n7eg7jtrmp5t",
           "coins": [
             {
@@ -87,7 +102,64 @@
           ]
         },
         {
+          "//name": "confio-1 validator",
+          "address": "wasm1yfkrs4ynk9xwnrmnv0xyde9sdpp3fmjvn74tha",
+          "coins": [
+            {
+              "denom": "ufrites",
+              "amount": "1000000"
+            },
+            {
+              "denom": "umayo",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "//name": "confio-2 validator",
+          "address": "wasm1a07j8jcsge37ngmgm4ucz7kdck66g3dtjnqcp0",
+          "coins": [
+            {
+              "denom": "ufrites",
+              "amount": "1000000"
+            },
+            {
+              "denom": "umayo",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "//name": "confio-3 validator",
           "address": "wasm1wdsryvt0lyxse3f9n28d4tpnun63l82tpxsefx",
+          "coins": [
+            {
+              "denom": "ufrites",
+              "amount": "1000000"
+            },
+            {
+              "denom": "umayo",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "//name": "confio-4 validator",
+          "address": "wasm1myqp75p0jvwpudxmny675jqu2jpksssupg5w4m",
+          "coins": [
+            {
+              "denom": "ufrites",
+              "amount": "1000000"
+            },
+            {
+              "denom": "umayo",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "//name": "confio-5 validator",
+          "address": "wasm1pllh835mch9qwsruj47fgq707xvjtk7mae5q7x",
           "coins": [
             {
               "denom": "ufrites",
