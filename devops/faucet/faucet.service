@@ -7,15 +7,15 @@ After=docker.service
 
 [Service]
 TimeoutStartSec=300
-Environment=FAUCET_CREDIT_AMOUNT_SHELL=1
+Environment=FAUCET_CREDIT_AMOUNT_MAYO=100000
 Environment="FAUCET_MNEMONIC=TOP_SECRET_MNEMONIC"
-Environment=FAUCET_ADDRESS_PREFIX=coral
-Environment="FAUCET_TOKENS=SHELL=10^6ushell,REEF=10^6ureef"
-Environment=FAUCET_FEE=2000ushell
+Environment=FAUCET_ADDRESS_PREFIX=wasm
+Environment="FAUCET_TOKENS=umayo"
+Environment="FAUCET_GAS_PRICE=0.01umayo"
 Restart=always
 User=root
 Group=root
-ExecStart=/usr/bin/docker run --rm --name faucet -e FAUCET_FEE -e FAUCET_CREDIT_AMOUNT_SHELL -e FAUCET_MNEMONIC -e FAUCET_ADDRESS_PREFIX -e FAUCET_TOKENS -e FAUCET_FEE --network=host -p 8000:8000 cosmwasm/faucet:manual
+ExecStart=/usr/bin/docker run --rm --name faucet -e FAUCET_CREDIT_AMOUNT_UMAYO -e FAUCET_MNEMONIC -e FAUCET_ADDRESS_PREFIX -e FAUCET_TOKENS -e FAUCET_GAS_PRICE --network=host -p 8000:8000 cosmwasm/faucet:manual
 ExecStop=/usr/bin/docker stop -t 2 faucet
 
 [Install]
