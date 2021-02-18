@@ -1,0 +1,1 @@
+{"src":{"chain-id":"stargate-final","client-id":"","connection-id":"","channel-id":"","port-id":"transfer","order":"unordered","version":"ics20-1"},"dst":{"chain-id":"musselnet-4","client-id":"","connection-id":"","channel-id":"","port-id":"transfer","order":"unordered","version":"ics20-1"},"strategy":{"type":"naive"}}
