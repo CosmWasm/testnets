@@ -140,7 +140,7 @@ max_subscriptions_per_client = 5
 # WARNING: Using a value larger than 10s will result in increasing the
 # global HTTP write timeout, which applies to all connections and endpoints.
 # See https://github.com/tendermint/tendermint/issues/3435
-timeout_broadcast_tx_commit = "1m0s"
+timeout_broadcast_tx_commit = "10s"
 
 # Maximum size of request body, in bytes
 max_body_bytes = 1000000
@@ -184,7 +184,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = ""
+persistent_peers = "0bc11a0ff00d9a1cc6d66976da783577368dda9c@192.168.0.16:26656,2203c6b5d3ccce2d8ecb720f2a91e0208b2dfb89@192.168.0.16:26656,58f0d377acc00dcb1300a9b697795c8b64757b4d@192.168.0.16:26656,f21ed896cefec27948a15d7fd02284f863069421@192.168.0.16:26656"
 
 # UPNP port forwarding
 upnp = false
@@ -271,7 +271,7 @@ max_tx_bytes = 1048576
 # Maximum size of a batch of transactions to send to a peer
 # Including space needed by encoding (one varint per transaction).
 # XXX: Unused due to https://github.com/tendermint/tendermint/issues/5796
-max_batch_bytes = 10485760
+max_batch_bytes = 0
 
 #######################################################
 ###         State Sync Configuration Options        ###
