@@ -15,7 +15,7 @@
 proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
-moniker = "val_moniker"
+moniker = "validator"
 
 # If this node is many blocks behind the tip of the chain, FastSync
 # allows them to catchup quickly by downloading blocks in parallel
@@ -47,7 +47,7 @@ db_backend = "goleveldb"
 db_dir = "data"
 
 # Output level for logging, including package level options
-log_level = "main:info,state:info,statesync:info,*:error"
+log_level = "info"
 
 # Output format: 'plain' (colored text) or 'json'
 log_format = "plain"
@@ -140,7 +140,7 @@ max_subscriptions_per_client = 5
 # WARNING: Using a value larger than 10s will result in increasing the
 # global HTTP write timeout, which applies to all connections and endpoints.
 # See https://github.com/tendermint/tendermint/issues/3435
-timeout_broadcast_tx_commit = "1m0s"
+timeout_broadcast_tx_commit = "1m10s"
 
 # Maximum size of request body, in bytes
 max_body_bytes = 1000000
@@ -271,7 +271,7 @@ max_tx_bytes = 1048576
 # Maximum size of a batch of transactions to send to a peer
 # Including space needed by encoding (one varint per transaction).
 # XXX: Unused due to https://github.com/tendermint/tendermint/issues/5796
-max_batch_bytes = 10485760
+max_batch_bytes = 0
 
 #######################################################
 ###         State Sync Configuration Options        ###
