@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: cosmwasm/big-dipper:latest
+    image: cosmwasm/big-dipper:stargate
     ports:
       - '3080:3000'
     depends_on:
