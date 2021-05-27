@@ -10,7 +10,7 @@ First, copy all files from this directory to the machine:
 
 Also, copy the proper env for the testnet you choose:
 
-`scp ../../musselnet/defaults.env root@1.2.3.4:`
+`scp ../../oysternet-1/defaults.env root@1.2.3.4:`
 
 ## Installing
 
@@ -68,7 +68,7 @@ Example for musselnet, values taken from `defaults.env`, `validator` being your 
 
 ```bash
 wasmd config chain-id musselnet
-wasmd config node https://rpc.musselnet.cosmwasm.com:443
+wasmd config node http://rpc.oysternet.cosmwasm.com:80
 
 wasmd query account $(wasmd keys show -a validator)
 ```
@@ -87,7 +87,7 @@ wasmd tx staking create-validator \
   --amount="100000000ufrites" \
   --pubkey=${VAL_PUBKEY} \
   --moniker=$MONIKER \
-  --chain-id=musselnet \
+  --chain-id=oysternet-1 \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \

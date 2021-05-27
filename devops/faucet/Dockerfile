@@ -9,4 +9,4 @@ RUN yarn global add @cosmjs/faucet@0.24.0-alpha.25
 RUN /usr/local/bin/cosmos-faucet version
 
 EXPOSE 8000
-CMD ["/usr/local/bin/cosmos-faucet", "start", "https://rpc.musselnet.cosmwasm.com:443"]
+CMD ["/usr/local/bin/cosmos-faucet", "start", "http://rpc.oysternet.cosmwasm.com:80"]
