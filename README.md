@@ -7,7 +7,7 @@ Information on all public CosmWasm testnets. Check
 
 | Network                      | Started    | wasmd    | CosmWasm | 
 |------------------------------|------------|----------|----------|
-| [Gaia Flex](./gaia-flex)     | 2020-08-18 | 0.10     | 0.10     |
+| [Oysternet](./oysternet)     | 2021-05-26 | 0.16     | 0.14     |
 | [Musselnet](./musselnet)     | 2021-01-11 | 0.15     | 0.13     |
 
 ### Upcoming
@@ -16,6 +16,7 @@ Information on all public CosmWasm testnets. Check
 
 ### Past
 
+* [Gaia Flex](./gaia-flex)
 * [Demo-10](./demo-10)
 * [Coralnet](./coralnet)
 * [Heldernet](./heldernet)
