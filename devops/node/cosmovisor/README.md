@@ -83,7 +83,7 @@ Example for musselnet, values taken from `defaults.env`, `validator` being your 
 
 ```bash
 wasmd config chain-id musselnet
-wasmd config node https://rpc.musselnet.cosmwasm.com:443
+wasmd config node http://rpc.oysternet.cosmwasm.com:80
 
 wasmd query account $(wasmd keys show -a validator)
 ```
