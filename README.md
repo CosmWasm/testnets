@@ -7,7 +7,8 @@ Information on all public CosmWasm testnets. Check
 
 | Network                      | Started    | wasmd    | CosmWasm | 
 |------------------------------|------------|----------|----------|
-| [Oysternet](./oysternet)     | 2021-05-26 | 0.16     | 0.14     |
+| [Oysternet-1](./oysternet-1)     | 2021-05-26 | 0.16     | 0.14     |
+| [Pebblenet-1](./pebbblenet-1)     | 2021-0x-xx | 0.18     | 0.16     |
 
 ### Upcoming
 
