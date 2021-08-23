@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2021-08-19T12:00:01.00Z",
+  "genesis_time": "2021-08-23T13:00:01Z",
   "chain_id": "pebblenet-1",
   "initial_height": "1",
   "consensus_params": {
@@ -135,7 +135,7 @@
     "crisis": {
       "constant_fee": {
         "denom": "urock",
-        "amount": "1000"
+        "amount": "1000000"
       }
     },
     "distribution": {
@@ -160,7 +160,252 @@
       "evidence": []
     },
     "genutil": {
-      "gen_txs": []
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-3",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1fnx5jzqsdkntlq2nspjgswtezf45u5ug3kq9sw",
+                "validator_address": "wasmvaloper1fnx5jzqsdkntlq2nspjgswtezf45u5ugy24e75",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "pVBgFnQ78iuzkY/4FV3LIUix60vW5D0I2UATTgYdUSI="
+                },
+                "value": {
+                  "denom": "urock",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "016f9fef83b92f0892973fc74cfc48c827c7aca0@10.0.0.6:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Amz/EItWUkvoakLqOiv6il319osNSrZQ6zUU9arnnpi8"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "7F0A9C/u8m4Cq0EDZ0IfiGIraVyIokIdgSfMN4zor4UBaGwQQRWzqki4aIgTdUJGvK7jBDYo9zEcbHImAdsKAg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-4",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm17qh5wseldax948h8gvrz5p469mf9eutpdhgehy",
+                "validator_address": "wasmvaloper17qh5wseldax948h8gvrz5p469mf9eutpcta9e7",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "lUbUm6Od8w0ACl1hBmlLvU/8CWVgh4ReQAbgf54cNLc="
+                },
+                "value": {
+                  "denom": "urock",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "01728f334e505ed9c411111dd11478df639416f0@10.0.0.7:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A0NwGtT+clcgpgVHwpMXUWCgZeQ7V4tXujv3MCeYAft8"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "9W0L95kZ68LmOTH4Yx6kqBUP5Ba+PXW3eNc2bNvSj4JcJyo1+AamsekJ2n7n4Whpf5oCp0zUbAjYZw9liWmiZA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-1",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm13krn38qhu83y5xvmjgydnk5vjau2u3c0tv5jsu",
+                "validator_address": "wasmvaloper13krn38qhu83y5xvmjgydnk5vjau2u3c07spw7x",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "5Tho8CaizD+TrxtF3Ivcqnf4RVZ2or9sRCrE9WBhoY4="
+                },
+                "value": {
+                  "denom": "urock",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "497efea40d209dd5620421ae59e0bf4beb6564ba@10.0.0.3:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AyHBXixWvEIz4irckEdaamPWE+vqgebyjC6wtCwNkw3t"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "syfwL5d65c/NLzl7PWlhAAZjXd7ZP7Q04G3QTRcq2Ronl4jbdce8nsn0mVI1qPGDebsCenXtrbmiU1402UMirQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-2",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1ppgpwep3yzh8w3d89xlzlens3420j5vs5q3p4j",
+                "validator_address": "wasmvaloper1ppgpwep3yzh8w3d89xlzlens3420j5vspuyamg",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "cnrh0nW8XcW/HI8Qu0mWALRD+UxefCj4ydtEomu6RI8="
+                },
+                "value": {
+                  "denom": "urock",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "f790876cfc9cd8ce6057a09021b45d23aeab799e@10.0.0.4:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A0KPQPMzdHXwyU//TkDsnX/QoOHH3hwdJHc4uxsG8hnc"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "bMeBGsug5to/uYpBx7wLPwI5QTJlkFSJI59TZVIJNdxTe3BbVvkfhHWNuT/pUdnlDdmoooBPG98O3ppTmG0JMA=="
+          ]
+        }
+      ]
     },
     "gov": {
       "starting_proposal_id": "1",
@@ -168,7 +413,7 @@
         "min_deposit": [
           {
             "denom": "urock",
-            "amount": "10000000"
+            "amount": "400000000000"
           }
         ],
         "max_deposit_period": "172800s"
