@@ -1,6 +1,6 @@
 import axios from  "axios"
 import fs from "fs"
-import { SigningCosmWasmClient, CosmWasmFeeTable} from "@cosmjs/cosmwasm-stargate"
+import { SigningCosmWasmClient, calculateFee} from "@cosmjs/cosmwasm-stargate"
 import { GasPrice, Secp256k1HdWallet, GasLimits, makeCosmoshubPath } from "@cosmjs/launchpad"
 import { Slip10RawIndex } from "@cosmjs/crypto"
 import path from "path"
@@ -16,13 +16,15 @@ interface Options {
   readonly defaultKeyFile: string
 }
 
-const defaultSendFee = calculateFee(80_000, defaultGasPrice);
-const defaultUploadFee = calculateFee(1_500_000, defaultGasPrice);
-const defaultInstantiateFee = calculateFee(500_000, defaultGasPrice);
-const defaultExecuteFee = calculateFee(200_000, defaultGasPrice);
-const defaultMigrateFee = calculateFee(200_000, defaultGasPrice);
-const defaultUpdateAdminFee = calculateFee(80_000, defaultGasPrice);
-const defaultClearAdminFee = calculateFee(80_000, defaultGasPrice);
+
+const pebblenetGasPrice = GasPrice.fromString("0.001upebble");
+const pebbleSendFee = calculateFee(80_000, pebblenetGasPrice);
+const pebbleUploadFee = calculateFee(1_500_000, pebblenetGasPrice);
+const pebbleInstantiateFee = calculateFee(500_000, pebblenetGasPrice);
+const pebbleExecuteFee = calculateFee(200_000, pebblenetGasPrice);
+const pebbleMigrateFee = calculateFee(200_000, pebblenetGasPrice);
+const pebbleUpdateAdminFee = calculateFee(80_000, pebblenetGasPrice);
+const pebbleClearAdminFee = calculateFee(80_000, pebblenetGasPrice);
 
 const oysternetOptions: Options = {
   httpUrl: 'http://rpc.oysternet.cosmwasm.com',
