@@ -20,5 +20,5 @@ Here we list all explorers, APIs, and apps you can access with a browser:
 * [RPC](https://rpc.pebblenet.cosmwasm.com) - public RPC endpoint
 * [LCD](https://lcd.pebblenet.cosmwasm.com) - public LCD endpoint
 * [FAUCET](https://faucet.pebblenet.cosmwasm.com) - faucet
-* [Big Dipper/BlOCK EXPLORER](https://block-explorer.pebblenet.cosmwasm.com) - block explorer
-* [Aneka/BlOCK EXPLORER](https://testnet.cosmwasm.aneka.io) - 2nd block explorer
+* [Big Dipper/BLOCK EXPLORER](https://block-explorer.pebblenet.cosmwasm.com) - block explorer
+* [Aneka/BLOCK EXPLORER](https://testnet.cosmwasm.aneka.io) - 2nd block explorer
