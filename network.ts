@@ -14,8 +14,15 @@ interface Options {
   readonly hdPath: readonly Slip10RawIndex[]
   readonly faucetUrl?: string
   readonly defaultKeyFile: string
-  readonly gasLimits: Partial<GasLimits<CosmWasmFeeTable>> // only set the ones you want to override
 }
+
+const defaultSendFee = calculateFee(80_000, defaultGasPrice);
+const defaultUploadFee = calculateFee(1_500_000, defaultGasPrice);
+const defaultInstantiateFee = calculateFee(500_000, defaultGasPrice);
+const defaultExecuteFee = calculateFee(200_000, defaultGasPrice);
+const defaultMigrateFee = calculateFee(200_000, defaultGasPrice);
+const defaultUpdateAdminFee = calculateFee(80_000, defaultGasPrice);
+const defaultClearAdminFee = calculateFee(80_000, defaultGasPrice);
 
 const oysternetOptions: Options = {
   httpUrl: 'http://rpc.oysternet.cosmwasm.com',
@@ -26,12 +33,6 @@ const oysternetOptions: Options = {
   faucetUrl: 'https://faucet.oysternet.cosmwasm.com/credit',
   hdPath: makeCosmoshubPath(0),
   defaultKeyFile: path.join(process.env.HOME, ".oysternet.key"),
-  gasLimits: {
-    upload: 1500000,
-    init: 600000,
-    register:800000,
-    transfer: 80000,
-  },
 }
 
 const pebblenetOptions: Options = {
@@ -43,12 +44,6 @@ const pebblenetOptions: Options = {
   faucetUrl: 'https://faucet.pebblnet.cosmwasm.com/credit',
   hdPath: makeCosmoshubPath(0),
   defaultKeyFile: path.join(process.env.HOME, ".pebblenet.key"),
-  gasLimits: {
-    upload: 1500000,
-    init: 600000,
-    register:800000,
-    transfer: 80000,
-  },
 }
 
 interface Network {
