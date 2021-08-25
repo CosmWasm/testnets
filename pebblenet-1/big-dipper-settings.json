@@ -1,0 +1,66 @@
+{
+    "public":{
+        "chainName": "CosmWasm Pebblenet",
+        "chainId": "pebblenet-1",
+        "gtm": "{Add your Google Tag Manager ID here}",
+        "slashingWindow": 10000,
+        "uptimeWindow": 250,
+        "initialPageSize": 30,
+        "secp256k1": false,
+        "bech32PrefixAccAddr": "wasm",
+        "bech32PrefixAccPub": "wasmpub",
+        "bech32PrefixValAddr": "wasmvaloper",
+        "bech32PrefixValPub": "wasmvaloperpub",
+        "bech32PrefixConsAddr": "wasmvalcons",
+        "bech32PrefixConsPub": "wasmvalconspub",
+        "bondDenom": "urock",
+        "powerReduction": 1000000,
+        "coins": [
+            {
+                "denom": "urock",
+                "displayName": "ROCK",
+                "fraction": 1000000
+            },
+            {
+                "denom": "upebble",
+                "displayName": "PEBBLE",
+                "fraction": 1000000
+            }
+        ],
+        "ledger":{
+            "gasPrice": 0.001
+        },
+        "modules": {
+            "bank": true,
+            "supply": true,
+            "minting": false,
+            "gov": true,
+            "distribution": false
+        },
+        "coingeckoId": "none",
+        "networks": "https://raw.githubusercontent.com/CosmWasm/testnets/master/pebblenet-1/genesis.json",
+        "banners": false
+    },
+    "remote":{
+        "rpc":"https://rpc.pebblenet.cosmwasm.com:443",
+        "api":"https://lcd.pebblenet.cosmwasm.com:443"
+    },
+    "debug": {
+        "startTimer": true
+    },
+    "params":{
+        "startHeight": 0,
+        "defaultBlockTime": 5000,
+        "validatorUpdateWindow": 300,
+        "blockInterval": 15000,
+        "transactionsInterval": 18000,
+        "keybaseFetchingInterval": 18000000,
+        "consensusInterval": 1000,
+        "statusInterval":7500,
+        "signingInfoInterval": 1800000,
+        "proposalInterval": 5000,
+        "missedBlocksInterval": 60000,
+        "delegationInterval": 900000
+    }
+}
+
