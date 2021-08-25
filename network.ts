@@ -34,6 +34,23 @@ const oysternetOptions: Options = {
   },
 }
 
+const pebblenetOptions: Options = {
+  httpUrl: 'https://rpc.pebblenet.cosmwasm.com',
+  networkId: 'pebblenet-1',
+  gasPrice:  GasPrice.fromString("0.01upebble"),
+  bech32prefix: 'wasm',
+  feeToken: 'upebble',
+  faucetUrl: 'https://faucet.pebblnet.cosmwasm.com/credit',
+  hdPath: makeCosmoshubPath(0),
+  defaultKeyFile: path.join(process.env.HOME, ".pebblenet.key"),
+  gasLimits: {
+    upload: 1500000,
+    init: 600000,
+    register:800000,
+    transfer: 80000,
+  },
+}
+
 interface Network {
   setup: (password: string, filename?: string) => Promise<[string, SigningCosmWasmClient]>
   recoverMnemonic: (password: string, filename?: string) => Promise<string>
