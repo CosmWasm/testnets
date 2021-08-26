@@ -1,6 +1,6 @@
 # Pebblenet
 
-Successor of Oysternet. Stargate including out of the box IBC functionality
+Successor of Oysternet.
 
 - **go version**: `1.16+`
 - **wasmd version**: [`v0.18.0`](https://github.com/CosmWasm/wasmd/releases/tag/v0.18.0)
