@@ -5,7 +5,7 @@ Successor of Oysternet.
 - **go version**: `1.16+`
 - **wasmd version**: [`v0.18.0`](https://github.com/CosmWasm/wasmd/releases/tag/v0.18.0)
 - **wasmd build command**: `make build`
-- **CosmJS version**: `v0.26.0`
+- **CosmJS version**: [`v0.26.0`](https://github.com/cosmos/cosmjs/releases/tag/v0.26.0)
 - **start**: 23rd August 2021
 
 The [genesis file](./config/genesis.json) is here.
