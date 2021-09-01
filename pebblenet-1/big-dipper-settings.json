@@ -38,7 +38,7 @@
             "distribution": false
         },
         "coingeckoId": "none",
-        "networks": "https://raw.githubusercontent.com/CosmWasm/testnets/master/pebblenet-1/genesis.json",
+        "networks": "https://raw.githubusercontent.com/CosmWasm/testnets/master/pebblenet-1/config/genesis.json",
         "banners": false
     },
     "remote":{
