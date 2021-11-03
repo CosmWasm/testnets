@@ -26,7 +26,7 @@ Running this will set up all dependencies,
 
 ## Adding config file
 
-For easy setup you can import a config file like in [this](../../musselnet/relayer).
+For easy setup you can import a config file like in [this](../../archive/musselnet/relayer).
 
 * `CONFIG_DIR` - config's directory on server. **REQUIRED**
 

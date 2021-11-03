@@ -32,7 +32,7 @@ SORTED=$(jq -S . < ./config/genesis.json) && echo "$SORTED" > ./config/genesis.j
 
 ## Connecting
 
-The configuration can be [downloaded here](./defaults.env).
+The configuration can be [downloaded here](defaults.env).
 Please `source defaults.env` to get all variable you need.
 
 With those, you can follow the
@@ -41,7 +41,7 @@ With those, you can follow the
 Or just connect your command-line client. In order to build customized wasmd executables `corald` and `coral`,
 clone `wasmd` repo and run `make build-coral` on the root of the project.
 
-The [genesis file](./config/genesis.json) is also available here.
+The [genesis file](config/genesis.json) is also available here.
 
 ## Web endpoints
 

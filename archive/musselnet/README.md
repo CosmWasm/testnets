@@ -8,7 +8,7 @@ Successor of Coralnet. Stargate including out of the box IBC functionality
 - **CosmJS version**: `v0.23.0`
 - **start**: 01st January 2021
 
-The [genesis file](./config/genesis.json) is here.
+The [genesis file](config/genesis.json) is here.
 
 - **Fee token:** `umayo`
 - **Staking token:** `ufrites`

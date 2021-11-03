@@ -15,12 +15,12 @@ Information on all public CosmWasm testnets. Check
 
 ### Past
 
-* [Oysternet-1](./oysternet-1) 
-* [Musselnet](./musselnet)
-* [Gaia Flex](./gaia-flex)
-* [Demo-10](./demo-10)
-* [Coralnet](./coralnet)
-* [Heldernet](./heldernet)
+* [Oysternet-1](archive/oysternet-1) 
+* [Musselnet](archive/musselnet)
+* [Gaia Flex](archive/gaia-flex)
+* [Demo-10](archive/demo-10)
+* [Coralnet](archive/coralnet)
+* [Heldernet](archive/heldernet)
 
 ## Checklist
 

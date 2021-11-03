@@ -23,7 +23,7 @@ With those, you can follow the
  on how to connect to a testnet.
 Or just connect your command-line client.
 
-The [genesis file](./genesis.json) is also available here.
+The [genesis file](genesis.json) is also available here.
 
 ## Web endpoints
 

@@ -14,7 +14,7 @@ A permissionless testing
 Short living network that will last until cosmwasm v0.12.0 is released.
 You can relate it to Ethereum's Rinkeby.
 
-The [genesis file](./config/genesis.json) is also available here.
+The [genesis file](config/genesis.json) is also available here.
 
 ## Web endpoints
 
