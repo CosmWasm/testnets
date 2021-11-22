@@ -20,4 +20,4 @@ Here we list all explorers, APIs, and apps you can access with a browser:
 * [RPC](https://rpc.sandynet.cosmwasm.com) - public RPC endpoint
 * [LCD](https://lcd.sandynet.cosmwasm.com) - public LCD endpoint
 * [FAUCET](https://faucet.sandynet.cosmwasm.com) - faucet
-* [Big Dipper/BLOCK EXPLORER](https://block-explorer.pebblenet.cosmwasm.com) - block explorer
+* [Big Dipper/BLOCK EXPLORER](https://block-explorer.sandynet.cosmwasm.com) - block explorer
