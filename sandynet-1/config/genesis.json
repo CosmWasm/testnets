@@ -1,0 +1,511 @@
+{
+  "genesis_time": "2021-11-22T13:00:01Z",
+  "chain_id": "sandynet-1",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "4194304",
+      "max_gas": "100000000000",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {}
+  },
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm1h0d3cmhewa77sgjlt8sxeettqsafy60pntw9fy"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm18zkset6gcqmmmn03dky8j7vzdmkufmhx986pca"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm12pgclzs8a5yf6m2tpu5zcqk4vca3j9e3fhd8vm"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm1u2qwu25zmdhhq2ag6lg4f3kx5xe2sgt7tags6c"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "wasm1lh9st65wq9jqc64pxg43jk4k0yt9k7v6wkdh9f"
+        }
+      ]
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "wasm18zkset6gcqmmmn03dky8j7vzdmkufmhx986pca",
+          "coins": [
+            {
+              "denom": "ubay",
+              "amount": "10000000000"
+            },
+            {
+              "denom": "umaya",
+              "amount": "35000000000000"
+            }
+          ]
+        },
+        {
+          "address": "wasm12pgclzs8a5yf6m2tpu5zcqk4vca3j9e3fhd8vm",
+          "coins": [
+            {
+              "denom": "ubay",
+              "amount": "10000000000"
+            },
+            {
+              "denom": "umaya",
+              "amount": "35000000000000"
+            }
+          ]
+        },
+        {
+          "address": "wasm1h0d3cmhewa77sgjlt8sxeettqsafy60pntw9fy",
+          "coins": [
+            {
+              "denom": "ubay",
+              "amount": "10000000000"
+            },
+            {
+              "denom": "umaya",
+              "amount": "35000000000000"
+            }
+          ]
+        },
+        {
+          "address": "wasm1u2qwu25zmdhhq2ag6lg4f3kx5xe2sgt7tags6c",
+          "coins": [
+            {
+              "denom": "ubay",
+              "amount": "10000000000"
+            },
+            {
+              "denom": "umaya",
+              "amount": "35000000000000"
+            }
+          ]
+        },
+        {
+          "address": "wasm1lh9st65wq9jqc64pxg43jk4k0yt9k7v6wkdh9f",
+          "coins": [
+            {
+              "denom": "ubay",
+              "amount": "4000000000000000"
+            },
+            {
+              "denom": "umaya",
+              "amount": "60000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [],
+      "denom_metadata": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "umaya",
+        "amount": "1000000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-3",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm18zkset6gcqmmmn03dky8j7vzdmkufmhx986pca",
+                "validator_address": "wasmvaloper18zkset6gcqmmmn03dky8j7vzdmkufmhxsm0ak8",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "6k9090qks+J0OLDKP0CU5uSD2SQkN/ZHFv+eXtfHanI="
+                },
+                "value": {
+                  "denom": "umaya",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "2a5f711957f488aa3d76100617d65cd17374333c@10.0.0.4:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A5y49824yEper2SKLrWxAeHfh6o+2mGrieJaa6Uu4eDf"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "Qzbf6ctKTuZysgyijGHhdUDsDcb+197Ze6c1psIIp9ADo88DCwYbsrxaLMbGt6sm5OH1vQXR2YIP3mPHYQI79Q=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-4",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1u2qwu25zmdhhq2ag6lg4f3kx5xe2sgt7tags6c",
+                "validator_address": "wasmvaloper1u2qwu25zmdhhq2ag6lg4f3kx5xe2sgt77pav5z",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "07XCCyX8XXY5pPOvEgz9g5CXiQltR8WsmzlUoiP4KCY="
+                },
+                "value": {
+                  "denom": "umaya",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "50b3697e4e47889de02538e7e7565e559e33716a@10.0.0.3:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A/QDveX9NSjegdhNS6w/Z7zkpUS7EFfCV/N+d2xm+bP0"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "znQiPGajuG/HFzzOxfZYHfciqyLx+Z/gPXEgmnlP6mkM+UsvAor4LA1ZhttcRcDOLluGlWgbysYiJgUfmtpdpA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-1",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm1h0d3cmhewa77sgjlt8sxeettqsafy60pntw9fy",
+                "validator_address": "wasmvaloper1h0d3cmhewa77sgjlt8sxeettqsafy60pxhme87",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "DaPvGWxifZg0z4qQCbLT62k5zjlLypj3r/sykPih+Pc="
+                },
+                "value": {
+                  "denom": "umaya",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "8e31fe78b3eda7fc44a106d6fc1fb11362639c3a@10.0.0.9:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AuJkh5bHW6IfQ4LZP3ld5L6RER0BG6Q16mpDpXnUlznZ"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "rvJZvdDZ2v7zhS7OJV5BqVVfk3A+jjc7dSAESO8fToo35mmZKW1+Cj8VMRe3kK1EtzJuHP7e79uTGZRFWyPvEg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "validator-3",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "wasm12pgclzs8a5yf6m2tpu5zcqk4vca3j9e3fhd8vm",
+                "validator_address": "wasmvaloper12pgclzs8a5yf6m2tpu5zcqk4vca3j9e3utcmzp",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "cTXuKz/K7BX0uBlivF3YCJmE8EdF25/5iLduwxT06M0="
+                },
+                "value": {
+                  "denom": "umaya",
+                  "amount": "3500000000000"
+                }
+              }
+            ],
+            "memo": "df52efe77b52a92e2045c94561f8fc433e47afcc@10.0.0.7:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AmmC82ug6NvPmoDJk3VHzjBVg+9iRUh6gvlXKZidBNw2"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            }
+          },
+          "signatures": [
+            "LPnUWMjbWhwXnVI/HuFYbfWGGpKawgItGlaQawGNRDNMAsiyew780+N3VWaUYX3oViIbpTDyYQHszRknadkv5w=="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "umaya",
+            "amount": "400000000000"
+          }
+        ],
+        "max_deposit_period": "172800s"
+      },
+      "voting_params": {
+        "voting_period": "172800s"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      }
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint"
+          ]
+        }
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": []
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": []
+      }
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "umaya",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "umaya"
+      },
+      "last_total_power": "0"
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      }
+    },
+    "upgrade": {},
+    "vesting": {},
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody"
+        },
+        "instantiate_default_permission": "Everybody",
+        "max_wasm_code_size": "1228800"
+      }
+    }
+  }
+}
