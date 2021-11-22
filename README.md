@@ -7,6 +7,7 @@ Information on all public CosmWasm testnets. Check
 
 | Network                      | Started    | wasmd    | CosmWasm | 
 |------------------------------|------------|----------|----------|
+| [Sandynet-1](./sandynet-1)     | 2021-11-22 | 0.21     | 1.0.0-beta     |
 | [Pebblenet-1](./pebblenet-1)     | 2021-08-23 | 0.18     | 0.16     |
 
 ### Upcoming
