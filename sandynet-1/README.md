@@ -21,3 +21,4 @@ Here we list all explorers, APIs, and apps you can access with a browser:
 * [LCD](https://lcd.sandynet.cosmwasm.com) - public LCD endpoint
 * [FAUCET](https://faucet.sandynet.cosmwasm.com) - faucet
 * [Big Dipper/BLOCK EXPLORER](https://block-explorer.sandynet.cosmwasm.com) - block explorer
+* [Aneka/BLOCK EXPLORER](https://block-explorer.sandynet.cosmwasm.com) - 2nd block explorer
