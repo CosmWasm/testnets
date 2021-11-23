@@ -19,9 +19,9 @@ Here we list all explorers, APIs, and apps you can access with a browser:
 
 * [RPC](https://rpc.sandynet.cosmwasm.com) - public RPC endpoint
 * [LCD](https://lcd.sandynet.cosmwasm.com) - public LCD endpoint
-* [P2P] - p2p endpoints for sentries
-  * [sentry-1](sentry-1.sandynet.cosmwasm.com:26656)
-  * [sentry-2](sentry-2.sandynet.cosmwasm.com:26656)
+* P2P - p2p endpoints for sentries
+  * sentry-1.sandynet.cosmwasm.com:26656
+  * sentry-2.sandynet.cosmwasm.com:26656
 * [FAUCET](https://faucet.sandynet.cosmwasm.com) - faucet
 * [Big Dipper/BLOCK EXPLORER](https://block-explorer.sandynet.cosmwasm.com) - block explorer
 * [Aneka/BLOCK EXPLORER](https://block-explorer.sandynet.cosmwasm.com) - 2nd block explorer
