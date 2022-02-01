@@ -7,7 +7,7 @@ Information on all public CosmWasm testnets. Check
 
 | Network                      | Started    | wasmd    | CosmWasm | 
 |------------------------------|------------|----------|----------|
-| [Sandynet-1](./sandynet-1)     | 2021-11-22 | 0.21     | 1.0.0-beta     |
+| [Cliffnet-1](./cliffnet-1)     | 2022-01-28 | 0.23     | 1.0.0-beta     |
 
 ### Upcoming
 
@@ -15,6 +15,7 @@ Information on all public CosmWasm testnets. Check
 
 ### Past
 
+* [Sandynet-1](archive/sandynet-1)
 * [Pebblenet-1](archive/pebblenet-1)
 * [Oysternet-1](archive/oysternet-1) 
 * [Musselnet](archive/musselnet)
