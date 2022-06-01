@@ -7,7 +7,8 @@ Information on all public CosmWasm testnets. Check
 
 | Network                      | Started    | wasmd    | CosmWasm | 
 |------------------------------|------------|----------|----------|
-| [Cliffnet-1](./cliffnet-1)     | 2022-01-28 | 0.23     | 1.0.0-beta     |
+| [Cliffnet-1](./malaga-420)     | 2022-0-28 | 0.27     | wasmvm@v1.0.0  |
+| [Cliffnet-1](./cliffnet-1)     | 2022-01-28 | 0.23     | 1.0.0-beta  |
 
 ### Upcoming
 
