@@ -2,9 +2,9 @@
 
 
 - **go version**: `1.17+`
-- **junod version**: [`v2.1.0`](https://github.com/CosmosContracts/juno/releases/tag/v2.1.0)
+- **junod version**: [`v6.0.0`](https://github.com/CosmosContracts/juno/releases/tag/v6.0.0)
 - **junod build command**: `make build`
-- **CosmJS version**: [`v0.26.5`](https://github.com/cosmos/cosmjs/releases/tag/v0.26.5)
+- **CosmJS version**: [`v0.28.4`](https://github.com/cosmos/cosmjs/releases/tag/v0.28.4)
 - **Token:** `ujunox`
 
 ## Web endpoints
