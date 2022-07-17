@@ -4,7 +4,7 @@
 - **wasmd version**: [`v0.27.0`](https://github.com/CosmWasm/wasmd/releases/tag/v0.27.0)
 - **wasmd build command**: `make build`
 - **CosmJS version**: [`v0.28.1`](https://github.com/cosmos/cosmjs/releases/tag/v0.28.1)
-- **start**: 31st May 2022
+- **start**: 13th Jul 2022
 
 The [genesis file](./config/genesis.json) is here.
 
