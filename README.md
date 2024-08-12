@@ -1,3 +1,8 @@
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨<br />
+🚨🚨 Unmaintained. Right now we do not run public CosmWasm testnets anymore.<br />
+🚨🚨 Various public CosmWasm testnets are provided by CosmWasm-enabled chains.<br />
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨<br />
+
 # CosmWasm Testnets
 
 Information on all public CosmWasm testnets. Check 
